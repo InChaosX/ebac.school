@@ -1,0 +1,78 @@
+{
+
+  "en":"Anglais",
+  "fr":"Français",
+
+  "Inscrivez-vous maintenant" : "Inscrivez-vous maintenant",
+   
+  "bthero": "S'inscrire au NCUK Casablanca",
+
+   "hero": "Commencez vos études au Maroc et terminez-les au Royaume-Uni",
+
+   "hero_part1": "Commencez vos études au Maroc",
+  "hero_part2": "et terminez-les au Royaume-Uni",
+
+
+   "partner1Title":"Partenaires universitaires NCUK",
+  "partner2text":"NCUK est unique dans l'enseignement supérieur au Royaume-Uni. Nous sommes un consortium d'universités de premier plan dont l'objectif est de garantir aux étudiants internationaux un accès garanti aux universités et de vous aider à réussir une fois sur place. Le centre accrédité au Maroc est situé à Casablanca.",
+ 
+
+  "2partner1Title":"Partenaires universitaires NCUK",
+  "2partner2text":"Progressez dans l'une des plus de 45 universités de classe mondiale au Royaume-Uni, aux États-Unis, au Canada, en Australie et en Nouvelle-Zélande, notamment :.",
+
+ 
+  "3partner1Title":"Combien ont été diplômés ?",
+  "3partner2text":"Le nombre d’étudiants marocains au Royaume-Uni a augmenté de plus de 26 % depuis 2014 pour atteindre plus de 700 étudiants – le chiffre du premier cycle (licence) représente une augmentation de près de 50 % !",
+ 
+ 
+   "c1": "Au cours des années...",
+    "c2": "Accrédité en mai 2019",
+     "c3": " Commencé en septembre 2019 : Année internationale de la fondation (IFY)",
+      "c4": " 2019-20 : Diplômé 5 étudiants (IFY Business et Ingénierie)",
+       "c5": "2020-21 : 8 étudiants diplômés (IFY Business and Science) ",
+        "c6": "2021-22 : Diplômé 6 étudiants (Commerce et Ingénierie) ",
+         "c7": "2022-23 : 14 étudiants diplômés (commerce et ingénierie)",
+          "c8": "2023-24 : Diplômer 7 étudiants (Commerce et Ingénierie)",
+
+           
+   
+"4partner1Title":"Exigences pour International Foundation Year :",
+  "4partner2text":"Les étudiants auront généralement au moins 17 ans au début de la qualification IFY (septembre 2021), mais il existe de nombreuses options pour les étudiants âgés de 16 ans..",
+   
+     "r1": "Anglais d'au moins 5.0 IELTS (système de test NCUK disponible pour les étudiants)",
+     "r2": "Diplome du Baccalaureat (MA, FR)",
+     "r3": " IGCSE (UK)",
+      "r4": " Diplôme d'études secondaires américain (US)",
+
+  
+
+
+
+      "contact":"Contactez-nous",
+      "con_part1": "démarre ton brillant",
+      "con_part2": "Avenir",
+      "con_part3": "ici...",
+
+
+
+
+    "toastMessage": "remplissez tous les champs",
+      "fname": "Entrez votre nom complet s'il vous plaît",
+      "email" : "Veuillez entrer votre email",
+      "phone" : "Veuillez entrer votre numéro de téléphone",
+      "room" : "Quand as-tu reçu ton certificat ? ",
+
+      "succes": "Merci, votre soumission a été reçue 🎉",
+      "error" : "Something wrong..check your Internet!",
+      "Nom Complete": "Nom complet ",
+      "Email": "E-mail",
+      "Numero De Telephone": "Numéro de téléphone ",
+      "when":" Quand as-tu eu ton baccalauréat ?",
+     
+      "ENVOYER VOTRE CANDIDATURE":"ENVOYER VOTRE CANDIDATURE"
+     
+     
+
+  
+
+}

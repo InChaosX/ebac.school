@@ -1,0 +1,29 @@
+# Block all crawlers from accessing the /accounts directory
+User-agent: *
+Disallow: /accounts
+
+# Allow all crawlers for all other directories
+User-agent: *
+Allow: /
+
+# Block specific bots (example: a known bad bot)
+User-agent: BadBot
+Disallow: /
+
+# Block crawling of all URLs with query parameters (optional)
+User-agent: *
+Disallow: /*?
+
+# Allow crawling of specific important resources (example)
+User-agent: *
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Block crawling of temporary directories (example)
+User-agent: *
+Disallow: /temp/
+Disallow: /temporary/
+
+# Sitemap location
+Sitemap: https://www.ncukcasablanca.com/sitemap.xml
