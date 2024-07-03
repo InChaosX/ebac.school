@@ -1,20 +1,14 @@
 import React from "react";
 
-function Grid3debac4() {
+function Grid5debac() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-2xl text-center font-bold text-[#061770]   ">
         <h1 className=" ">
-          EBacc for your academic success - Your education, our priority.
+          Meet the team behind EBacc - Dedicated to your academic success
         </h1>
       </div>
-      {/* <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:flex-row-reverse py-36 md:-mt-20 -mt-32"></div> */}
-      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2    py-36  md:-mt-20 -mt-32">
-        <img
-          alt=""
-          src="/gra.jpg"
-          className="h-56 w-full object-cover sm:h-full"
-        />
+      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2  py-36  md:-mt-20 -mt-32">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
@@ -24,9 +18,7 @@ function Grid3debac4() {
                 open
               >
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">
-                    Registration Conditions
-                  </h2>
+                  <h2 className="font-bold text-2xl">Our Story</h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -62,18 +54,16 @@ function Grid3debac4() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  o enroll in EBacc, students must be initially enrolled in a
-                  school and engaged in a formal study program. This condition
-                  ensures a strong educational foundation and supplementary
-                  preparation for IGCSE.
+                  EBacc was founded by a group of education professionals
+                  passionate about teaching and determined to offer innovative
+                  learning solutions. Since our inception, we have helped many
+                  students achieve their academic goals.
                 </p>
               </details>
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">
-                    Commitment to Excellence
-                  </h2>
+                  <h2 className="font-bold text-2xl">Our Team</h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -109,16 +99,16 @@ function Grid3debac4() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  We are committed to providing a top-tier education that
-                  exceeds traditional academic expectations. EBacc prepares
-                  students to excel not only in exams, but also in their future
-                  academic life.
+                  The EBacc team consists of qualified and experienced
+                  instructors, each specialized in their respective fields. We
+                  work together to provide superior quality education and
+                  constant pedagogical support.
                 </p>
               </details>
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Security and Privacy</h2>
+                  <h2 className="font-bold text-2xl">Our Values</h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -154,9 +144,10 @@ function Grid3debac4() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  The security of students' data is a top priority at EBacc. We
-                  adhere to strict privacy standards to ensure a safe and
-                  protected learning environment.
+                  At EBacc, we value academic excellence, integrity, and
+                  commitment to our students. We believe in the importance of an
+                  inclusive and supportive learning environment where every
+                  student can thrive and succeed.
                 </p>
               </details>
             </div>
@@ -165,14 +156,14 @@ function Grid3debac4() {
           </div>
         </div>
 
-        {/* <img
+        <img
           alt=""
-          src="/clear-objective.jpg"
+          src="/table.jpg"
           className="h-56 w-full object-cover sm:h-full"
-        /> */}
+        />
       </div>
     </section>
   );
 }
 
-export default Grid3debac4;
+export default Grid5debac;
