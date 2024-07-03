@@ -29,7 +29,9 @@ function Heroe() {
             data-aos-delay="700"
             className="w-full md:flex items-center justify-center lg:justify-start md:space-x-5 cursor-pointer"
           >
-            <button className=" mx-32  bg-[#f5cd2c] text-white text-xl font-bold rounded-full py-4  cursor-pointer px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
+            {/* lg:mx-0 bg-yellow-500 text-white text-xl font-bold rounded-full py-4
+            px-9 btn-zoom */}
+            <button className="lg:mx-0 bg-[#f5cd2c] text-white text-xl font-bold rounded-full py-4  cursor-pointer px-20 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out">
               Join now !
             </button>
           </div>

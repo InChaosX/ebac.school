@@ -18,8 +18,8 @@ function Grid3debac() {
                 className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
                 open
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">
+                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 ">
+                  <h2 className="font-bold text-2xl ">
                     Our Educational Mission
                   </h2>
 
@@ -57,10 +57,10 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  At EBacc, our mission is to enhance
-                  students' academic learning by complementing their initial
-                  school curriculum. We prepare students to excel in IGCSE exams
-                  through a rigorous and well-structured program.
+                  At EBacc, our mission is to enhance students' academic
+                  learning by complementing their initial school curriculum. We
+                  prepare students to excel in IGCSE exams through a rigorous
+                  and well-structured program.
                 </p>
               </details>
 
@@ -102,10 +102,9 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  We aim to provide thorough training in
-                  key subjects such as mathematics, sciences, English, and more,
-                  while strengthening French skills for comprehensive IGCSE
-                  preparation.
+                  We aim to provide thorough training in key subjects such as
+                  mathematics, sciences, English, and more, while strengthening
+                  French skills for comprehensive IGCSE preparation.
                 </p>
               </details>
 
@@ -147,10 +146,10 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                   With EBacc, students benefit from quality
-                  education supplemented by live sessions with our qualified
-                  instructors, ensuring thorough and personalized preparation
-                  for IGCSE exams.
+                  With EBacc, students benefit from quality education
+                  supplemented by live sessions with our qualified instructors,
+                  ensuring thorough and personalized preparation for IGCSE
+                  exams.
                 </p>
               </details>
             </div>
