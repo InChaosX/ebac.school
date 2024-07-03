@@ -57,7 +57,7 @@ function Grid3debac3() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  students participate in weekly live sessions of 2 hours per
+                  Students participate in weekly live sessions of 2 hours per
                   subject, conducted by our dedicated educational team. These
                   sessions provide a unique opportunity to deepen understanding
                   of concepts and ask questions in real time.
@@ -152,7 +152,7 @@ function Grid3debac3() {
                   Students benefit from direct interaction with qualified
                   instructors who are passionate about teaching and dedicated to
                   their academic success. This personal connection enhances
-                  student engagement and promotes effective learning
+                  student engagement and promotes effective learning.
                 </p>
               </details>
             </div>

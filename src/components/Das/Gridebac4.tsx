@@ -62,7 +62,7 @@ function Grid3debac4() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  to enroll in EBacc, students must be initially enrolled in a
+                  To enroll in EBacc, students must be initially enrolled in a
                   school and engaged in a formal study program. This condition
                   ensures a strong educational foundation and supplementary
                   preparation for IGCSE.
