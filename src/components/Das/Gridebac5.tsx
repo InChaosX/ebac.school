@@ -9,6 +9,11 @@ function Grid5debac() {
         </h1>
       </div>
       <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2  py-36  md:-mt-20 -mt-32">
+        {/* <img
+          alt=""
+          src="/table.jpg"
+          className="h-56 w-full object-cover sm:h-full hidden md:block"
+        /> */}
         <div className="p-1 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
@@ -159,7 +164,7 @@ function Grid5debac() {
         <img
           alt=""
           src="/table.jpg"
-          className="h-56 w-full object-cover sm:h-full"
+          className="h-56 w-full object-cover sm:h-full "
         />
       </div>
     </section>

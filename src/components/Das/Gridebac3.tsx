@@ -3,16 +3,20 @@ import React from "react";
 function Grid3debac3() {
   return (
     <section className="bg-white md:px-20 px-8">
-      <div className=" flex justify-center items-center md:text-3xl text-2xl text-center font-bold text-[#061770]   ">
-        <h1 className=" ">
+      <div className="flex justify-center items-center md:text-3xl text-2xl text-center font-bold text-[#061770]">
+        <h1>
           PrepEngage with our interactive live sessions - Learn together,
           succeed together.
         </h1>
       </div>
-      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2  py-36  md:-mt-20 -mt-32">
+      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 py-36 md:-mt-20 -mt-32">
+        <img
+          alt=""
+          src="/meet.jpg"
+          className="h-56 w-full object-cover sm:h-full block sm:hidden"
+        />
         <div className="p-1 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            {/* start */}
             <div className="space-y-4">
               <details
                 className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
@@ -22,7 +26,6 @@ function Grid3debac3() {
                   <h2 className="font-bold text-2xl">
                     Structured Live Sessions
                   </h2>
-
                   <span className="relative size-5 shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +41,6 @@ function Grid3debac3() {
                         d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
@@ -55,7 +57,6 @@ function Grid3debac3() {
                     </svg>
                   </span>
                 </summary>
-
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
                   Students participate in weekly live sessions of 2 hours per
                   subject, conducted by our dedicated educational team. These
@@ -63,11 +64,9 @@ function Grid3debac3() {
                   of concepts and ask questions in real time.
                 </p>
               </details>
-
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                   <h2 className="font-bold text-2xl">Pedagogical Support</h2>
-
                   <span className="relative size-5 shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +82,6 @@ function Grid3debac3() {
                         d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="absolute inset-0 opacity-0 group-open:opacity-100"
@@ -100,7 +98,6 @@ function Grid3debac3() {
                     </svg>
                   </span>
                 </summary>
-
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
                   EBacc is committed to providing comprehensive pedagogical
                   support throughout the learning journey. Our instructors are
@@ -108,13 +105,11 @@ function Grid3debac3() {
                   progress with confidence.
                 </p>
               </details>
-
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                   <h2 className="font-bold text-2xl">
                     Interaction with Instructors
                   </h2>
-
                   <span className="relative size-5 shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +125,6 @@ function Grid3debac3() {
                         d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="absolute inset-0 opacity-0 group-open:opacity-100"
@@ -147,7 +141,6 @@ function Grid3debac3() {
                     </svg>
                   </span>
                 </summary>
-
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
                   Students benefit from direct interaction with qualified
                   instructors who are passionate about teaching and dedicated to
@@ -156,15 +149,12 @@ function Grid3debac3() {
                 </p>
               </details>
             </div>
-
-            {/* end */}
           </div>
         </div>
-
         <img
           alt=""
           src="/meet.jpg"
-          className="h-56 w-full object-cover sm:h-full"
+          className="h-56 w-full object-cover sm:h-full hidden sm:block"
         />
       </div>
     </section>
