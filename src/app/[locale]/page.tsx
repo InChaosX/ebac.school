@@ -12,10 +12,11 @@ import React from "react";
 // import GGGrid from "@/components/Das/GGGrid";
 import { NextSeo } from "next-seo";
 import Heroe from "@/components/Das/Heroe";
-import Partnereba from "@/components/Das/Partnereba";
-import Gridebac from "@/components/Das/Gridebac";
-import Accrding from "@/components/Das/Accrding";
+
 import Grid3debac from "@/components/Das/Grid3debac";
+import Grid3debac2 from "@/components/Das/Gridebac2";
+import Grid3debac3 from "@/components/Das/Gridebac3";
+import Grid3debac4 from "@/components/Das/Gridebac4";
 
 
 export default async function IndexPage() {
@@ -48,18 +49,12 @@ export default async function IndexPage() {
   return (
     <div className="">
       <div className="">
-        <Heroe/>
-       <Accrding/>
-        <Partnereba/>
-        {/* <Gridebac/> */}
-        <Grid3debac/>
-        {/* <HHero /> */}
-        {/* <SlideLogo /> */}
-        {/* <Section3 /> */}
-        {/* <Logoflex/> */}
-        {/* <GGGrid /> */}
-        {/* <Accroding/>
-        <Contactt /> */}
+        <Heroe />
+
+        <Grid3debac />
+        <Grid3debac2 />
+        <Grid3debac3 />
+        <Grid3debac4 />
       </div>
     </div>
   );

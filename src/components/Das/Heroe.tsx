@@ -9,7 +9,7 @@ function Heroe() {
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            className="my-4 text-5xl font-bold leading-tight text-darken"
+            className="my-4 md:text-5xl text-3xl md:mt-1 mt-20 font-bold leading-tight text-darken"
           >
             <span className="text-[#cc2132]">Studying</span>{" "}
             <span className="text-[#061770]">Online is now much easier</span>

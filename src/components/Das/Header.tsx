@@ -81,7 +81,7 @@ function Header() {
 
   return (
     <section
-      className="bg-[#061770]  top-0 left-0 right-0 z-50 h-[100px] fixed clip "
+      className="bg-[#061770]  top-0 left-0 right-0 z-50 h-[100px] fixed  "
       id="navbar"
     >
       <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 sm:py-4 lg:px-8 ">

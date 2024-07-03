@@ -1,15 +1,21 @@
-import React from 'react'
+import React from "react";
 
-function Grid3debac() {
+function Grid3debac2() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-2xl text-center font-bold text-[#061770]   ">
         <h1 className=" ">
-          Prepare for IGCSE with EBacc - Educational excellence beyond
-          traditional courses.
+          Explore our range of IGCSE courses with EBacc - Your path to academic
+          excellence.
         </h1>
       </div>
-      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2  py-36  md:-mt-20 -mt-32">
+      {/* <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:flex-row-reverse py-36 md:-mt-20 -mt-32"></div> */}
+      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2    py-36  md:-mt-20 -mt-32">
+        <img
+          alt=""
+          src="/student.jpg"
+          className="h-56 w-full object-cover sm:h-full"
+        />
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
@@ -19,9 +25,7 @@ function Grid3debac() {
                 open
               >
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">
-                    Our Educational Mission
-                  </h2>
+                  <h2 className="font-bold text-2xl">Our IGCSE Courses</h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -57,16 +61,16 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Our Educational Mission: At EBacc, our mission is to enhance
-                  students' academic learning by complementing their initial
-                  school curriculum. We prepare students to excel in IGCSE exams
-                  through a rigorous and well-structured program.
+                  EBacc offers a variety of courses specifically designed to
+                  prepare students for IGCSE exams. Our programs align with
+                  international standards and are enriched by our experienced
+                  educational team.
                 </p>
               </details>
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Learning Objectives</h2>
+                  <h2 className="font-bold text-2xl">Subjects Covered</h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -102,16 +106,18 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Learning Objectives: We aim to provide thorough training in
-                  key subjects such as mathematics, sciences, English, and more,
-                  while strengthening French skills for comprehensive IGCSE
-                  preparation.
+                  From Year 7 to Year 11, our courses include mathematics,
+                  sciences (biology, physics, chemistry), English, and French.
+                  Each subject is taught with a commitment to academic
+                  excellence and a deep understanding of concepts.
                 </p>
               </details>
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Why Choose EBacc?</h2>
+                  <h2 className="font-bold text-2xl">
+                    Personalization of Learning
+                  </h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -147,10 +153,10 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Why Choose EBacc?: With EBacc, students benefit from quality
-                  education supplemented by live sessions with our qualified
-                  instructors, ensuring thorough and personalized preparation
-                  for IGCSE exams.
+                  At EBacc, we recognize the importance of personalized learning
+                  to meet the individual needs of students. Our courses offer
+                  optimal flexibility to adapt to varying learning paces of each
+                  student.
                 </p>
               </details>
             </div>
@@ -159,14 +165,14 @@ function Grid3debac() {
           </div>
         </div>
 
-        <img
+        {/* <img
           alt=""
           src="/clear-objective.jpg"
           className="h-56 w-full object-cover sm:h-full"
-        />
+        /> */}
       </div>
     </section>
   );
 }
 
-export default Grid3debac;
+export default Grid3debac2;

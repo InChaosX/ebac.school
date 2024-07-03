@@ -1,15 +1,20 @@
-import React from 'react'
+import React from "react";
 
-function Grid3debac() {
+function Grid3debac4() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-2xl text-center font-bold text-[#061770]   ">
         <h1 className=" ">
-          Prepare for IGCSE with EBacc - Educational excellence beyond
-          traditional courses.
+          EBacc for your academic success - Your education, our priority.
         </h1>
       </div>
-      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2  py-36  md:-mt-20 -mt-32">
+      {/* <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:flex-row-reverse py-36 md:-mt-20 -mt-32"></div> */}
+      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2    py-36  md:-mt-20 -mt-32">
+        <img
+          alt=""
+          src="/girl-with-books.png"
+          className="h-56 w-full object-cover sm:h-full"
+        />
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
@@ -20,7 +25,7 @@ function Grid3debac() {
               >
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                   <h2 className="font-bold text-2xl">
-                    Our Educational Mission
+                    Registration Conditions
                   </h2>
 
                   <span className="relative size-5 shrink-0">
@@ -57,16 +62,18 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Our Educational Mission: At EBacc, our mission is to enhance
-                  students' academic learning by complementing their initial
-                  school curriculum. We prepare students to excel in IGCSE exams
-                  through a rigorous and well-structured program.
+                  o enroll in EBacc, students must be initially enrolled in a
+                  school and engaged in a formal study program. This condition
+                  ensures a strong educational foundation and supplementary
+                  preparation for IGCSE.
                 </p>
               </details>
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Learning Objectives</h2>
+                  <h2 className="font-bold text-2xl">
+                    Commitment to Excellence
+                  </h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -102,16 +109,16 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Learning Objectives: We aim to provide thorough training in
-                  key subjects such as mathematics, sciences, English, and more,
-                  while strengthening French skills for comprehensive IGCSE
-                  preparation.
+                  We are committed to providing a top-tier education that
+                  exceeds traditional academic expectations. EBacc prepares
+                  students to excel not only in exams, but also in their future
+                  academic life.
                 </p>
               </details>
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Why Choose EBacc?</h2>
+                  <h2 className="font-bold text-2xl">Security and Privacy</h2>
 
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -147,10 +154,9 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Why Choose EBacc?: With EBacc, students benefit from quality
-                  education supplemented by live sessions with our qualified
-                  instructors, ensuring thorough and personalized preparation
-                  for IGCSE exams.
+                  The security of students' data is a top priority at EBacc. We
+                  adhere to strict privacy standards to ensure a safe and
+                  protected learning environment.
                 </p>
               </details>
             </div>
@@ -159,14 +165,14 @@ function Grid3debac() {
           </div>
         </div>
 
-        <img
+        {/* <img
           alt=""
           src="/clear-objective.jpg"
           className="h-56 w-full object-cover sm:h-full"
-        />
+        /> */}
       </div>
     </section>
   );
 }
 
-export default Grid3debac;
+export default Grid3debac4;
