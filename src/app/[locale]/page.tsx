@@ -14,6 +14,9 @@ import { NextSeo } from "next-seo";
 import Heroe from "@/components/Das/Heroe";
 import Partnereba from "@/components/Das/Partnereba";
 import Gridebac from "@/components/Das/Gridebac";
+import Accrding from "@/components/Das/Accrding";
+import Grid3debac from "@/components/Das/Grid3debac";
+
 
 export default async function IndexPage() {
 
@@ -46,8 +49,10 @@ export default async function IndexPage() {
     <div className="">
       <div className="">
         <Heroe/>
+       <Accrding/>
         <Partnereba/>
-        <Gridebac/>
+        {/* <Gridebac/> */}
+        <Grid3debac/>
         {/* <HHero /> */}
         {/* <SlideLogo /> */}
         {/* <Section3 /> */}

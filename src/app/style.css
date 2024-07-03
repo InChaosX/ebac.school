@@ -428,3 +428,10 @@ body {
 .text-darken {
   color: #2F327D;
 }
+
+
+
+.clip{
+  /* clip-path: ellipse(100% 55% at 48% 44%); */
+clip-path: ellipse(120% 60% at 40% 34%);
+  }

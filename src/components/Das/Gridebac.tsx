@@ -2,7 +2,7 @@ import React from 'react'
 
 function Gridebac() {
   return (
-    <div className='bg-pink md:px-24 px-1'>
+    <div className='bg-white md:px-24 px-1'>
      
         <div className="mt-24 flex flex-col-reverse md:flex-row items-center md:space-x-10">
           <div data-aos="fade-right" className="md:w-7/12">

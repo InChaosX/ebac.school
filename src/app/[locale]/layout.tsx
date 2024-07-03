@@ -18,10 +18,10 @@ type Props = {
 
 
 export const metadata: Metadata = {
-  title: "ebac",
-  description: "ebac ",
+  title: "Ebacc",
+  description: "Ebacc E-Learning ",
   keywords: [
-    "education",
+    "Education",
 
     "NCUK Casablanca ",
 
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   // Open Graph metadata
   openGraph: {
-    title: "ebac",
-    description: "Your Gateway to Higher Education",
+    title: "Ebacc",
+    description: "Ebacc E-Learning",
     type: "website",
     url: "https://www.ncukcasablanca.com/",
     siteName: " https://www.ncukcasablanca.com/sitemap.xml",
