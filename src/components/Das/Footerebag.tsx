@@ -67,7 +67,7 @@ function Footerebag() {
           </a>
         </div>
 
-        <div className="text-center text-[#cc2132]">
+        <div className="text-center text-white">
           <p className="my-3 text-gray-400 text-sm">
             &copy; 2025 Ebacc by London Academy.{" "}
           </p>
