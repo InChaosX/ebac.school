@@ -57,7 +57,7 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Our Educational Mission: At EBacc, our mission is to enhance
+                  At EBacc, our mission is to enhance
                   students' academic learning by complementing their initial
                   school curriculum. We prepare students to excel in IGCSE exams
                   through a rigorous and well-structured program.
@@ -102,7 +102,7 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Learning Objectives: We aim to provide thorough training in
+                  We aim to provide thorough training in
                   key subjects such as mathematics, sciences, English, and more,
                   while strengthening French skills for comprehensive IGCSE
                   preparation.
@@ -147,7 +147,7 @@ function Grid3debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  Why Choose EBacc?: With EBacc, students benefit from quality
+                   With EBacc, students benefit from quality
                   education supplemented by live sessions with our qualified
                   instructors, ensuring thorough and personalized preparation
                   for IGCSE exams.
