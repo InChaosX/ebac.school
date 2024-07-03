@@ -16,7 +16,7 @@ function Grid3debac2() {
           src="/student.jpg"
           className="h-56 w-full object-cover sm:h-full"
         />
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div className="p-1 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
             <div className="space-y-4">

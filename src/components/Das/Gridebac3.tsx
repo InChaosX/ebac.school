@@ -10,7 +10,7 @@ function Grid3debac3() {
         </h1>
       </div>
       <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2  py-36  md:-mt-20 -mt-32">
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div className="p-1 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
             <div className="space-y-4">

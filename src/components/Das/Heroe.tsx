@@ -61,7 +61,7 @@ function Heroe() {
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-once="true"
-            className="absolute top-20 right-10 sm:right-24 sm:top-28 md:top-36 md:right-32 lg:top-32 lg:-right-7 floating"
+            className="absolute top-20 right-10 sm:right-24 sm:top-28 md:top-36 md:right-32 lg:top-32   lg:-right-7 floating"
           >
             <img
               className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-20"
