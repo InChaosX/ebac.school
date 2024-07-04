@@ -24,7 +24,7 @@ function Grid3debac() {
                 open
               >
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 bg-gray-50 p-2 rounded-2xl">
-                  <h2 className="font-bold text-2xl py-3 p-3 rounded-3xl ">
+                  <h2 className="font-bold text-2xl py-3  rounded-3xl ">
                     Our Educational Mission
                   </h2>
                   <span className="relative size-5 shrink-0">
