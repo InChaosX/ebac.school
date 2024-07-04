@@ -38,7 +38,7 @@ function Cont() {
 
             <textarea
               className="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="text"
+              // type="text"
               placeholder="Type your message here..."
               name="message"
             ></textarea>

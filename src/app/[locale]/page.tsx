@@ -18,8 +18,8 @@ import Grid3debac2 from "@/components/Das/Gridebac2";
 import Grid3debac3 from "@/components/Das/Gridebac3";
 import Grid3debac4 from "@/components/Das/Gridebac4";
 import Grid5debac from "@/components/Das/Gridebac5";
-import Model from "@/components/Das/Model";
-import Cont from "@/components/Das/Cont";
+// import Model from "@/components/Das/Model";
+// import Cont from "@/components/Das/Cont";
 import ContactGrid from "@/components/Das/ContactGrid";
 
 
