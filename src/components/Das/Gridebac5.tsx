@@ -3,8 +3,8 @@ import React from "react";
 function Grid5debac() {
   return (
     <section className="bg-white md:px-20 px-8">
-      <div className=" flex justify-center items-center md:text-3xl text-2xl text-center font-bold text-[#061770]   ">
-        <h1 className=" ">
+      <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white  ">
+        <h1 className="bg-[#f5cd2c] p-3 rounded-full ">
           Meet the team behind EBacc - Dedicated to your academic success
         </h1>
       </div>

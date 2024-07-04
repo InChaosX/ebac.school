@@ -3,8 +3,8 @@ import React from "react";
 function Grid3debac() {
   return (
     <section className="bg-white md:px-20 px-8">
-      <div className="flex justify-center items-center md:text-3xl text-2xl text-center font-bold text-[#061770]">
-        <h1>
+      <div className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white ">
+        <h1 className="bg-[#f5cd2c] p-3 rounded-full">
           Prepare for IGCSE with EBacc - Educational excellence beyond
           traditional courses.
         </h1>
@@ -23,8 +23,8 @@ function Grid3debac() {
                 className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
                 open
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">
+                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 bg-gray-50 p-2 rounded-2xl">
+                  <h2 className="font-bold text-2xl py-3 p-3 rounded-3xl ">
                     Our Educational Mission
                   </h2>
                   <span className="relative size-5 shrink-0">
