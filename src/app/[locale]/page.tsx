@@ -18,6 +18,7 @@ import Grid3debac2 from "@/components/Das/Gridebac2";
 import Grid3debac3 from "@/components/Das/Gridebac3";
 import Grid3debac4 from "@/components/Das/Gridebac4";
 import Grid5debac from "@/components/Das/Gridebac5";
+import Model from "@/components/Das/Model";
 
 
 export default async function IndexPage() {
@@ -57,6 +58,7 @@ export default async function IndexPage() {
         <Grid3debac3 />
         <Grid3debac4 />
         <Grid5debac/>
+        <Model/>
       </div>
     </div>
   );
