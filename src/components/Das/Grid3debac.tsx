@@ -4,7 +4,7 @@ function Grid3debac() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white ">
-        <h1 className="bg-[#f5cd2c] p-3 rounded-full">
+        <h1 className="bg-[#77B5FE] p-3 rounded-full">
           Prepare for IGCSE with  eBacc - Educational excellence beyond
           traditional courses.
         </h1>
