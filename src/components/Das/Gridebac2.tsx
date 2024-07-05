@@ -61,7 +61,7 @@ function Grid3debac2() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  EBacc offers a variety of courses specifically designed to
+                  eBacc offers a variety of courses specifically designed to
                   prepare students for IGCSE exams. Our programs align with
                   international standards and are enriched by our experienced
                   educational team.

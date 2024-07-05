@@ -5,7 +5,7 @@ function Grid3debac4() {
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white  ">
         <h1 className="bg-[#f5cd2c] p-3 rounded-full">
-          EBacc for your academic success - Your education, our priority.
+          eBacc for your academic success - Your education, our priority.
         </h1>
       </div>
       {/* <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:flex-row-reverse py-36 md:-mt-20 -mt-32"></div> */}

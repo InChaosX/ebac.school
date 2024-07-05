@@ -99,7 +99,7 @@ function Grid3debac3() {
                   </span>
                 </summary>
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  EBacc is committed to providing comprehensive pedagogical
+                  eBacc is committed to providing comprehensive pedagogical
                   support throughout the learning journey. Our instructors are
                   available to help students overcome academic challenges and
                   progress with confidence.

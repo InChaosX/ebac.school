@@ -109,7 +109,7 @@ function Grid3debac() {
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Why Choose EBacc?</h2>
+                  <h2 className="font-bold text-2xl">Why Choose eBacc?</h2>
                   <span className="relative size-5 shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
