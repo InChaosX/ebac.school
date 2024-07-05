@@ -5,7 +5,7 @@ function Grid3debac2() {
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white">
         <h1 className="bg-[#f5cd2c] p-3 rounded-full  ">
-          Explore our range of IGCSE courses with EBacc - Your path to academic
+          Explore our range of IGCSE courses with eBacc - Your path to academic
           excellence.
         </h1>
       </div>
@@ -153,7 +153,7 @@ function Grid3debac2() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  At EBacc, we recognize the importance of personalized learning
+                  At eBacc, we recognize the importance of personalized learning
                   to meet the individual needs of students. Our courses offer
                   optimal flexibility to adapt to varying learning paces of each
                   student.

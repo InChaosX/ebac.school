@@ -69,7 +69,7 @@ function Footerebag() {
 
         <div className="text-center text-white">
           <p className="my-3 text-gray-400 text-sm">
-            &copy; 2025 Ebacc by London Academy.{" "}
+            &copy; 2025 eBacc by London Academy.{" "}
           </p>
           {/* <div className="py-3 tracking-wide">
             <p>

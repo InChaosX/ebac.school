@@ -18,8 +18,8 @@ type Props = {
 
 
 export const metadata: Metadata = {
-  title: "Ebacc",
-  description: "Ebacc E-Learning ",
+  title: "eBacc",
+  description: "eBacc E-Learning ",
   keywords: [
     "Education",
 

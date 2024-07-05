@@ -59,7 +59,7 @@ function Grid5debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  EBacc was founded by a group of education professionals
+                  eBacc was founded by a group of education professionals
                   passionate about teaching and determined to offer innovative
                   learning solutions. Since our inception, we have helped many
                   students achieve their academic goals.
@@ -104,7 +104,7 @@ function Grid5debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  The EBacc team consists of qualified and experienced
+                  The eBacc team consists of qualified and experienced
                   instructors, each specialized in their respective fields. We
                   work together to provide superior quality education and
                   constant pedagogical support.
@@ -149,7 +149,7 @@ function Grid5debac() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  At EBacc, we value academic excellence, integrity, and
+                  At eBacc, we value academic excellence, integrity, and
                   commitment to our students. We believe in the importance of an
                   inclusive and supportive learning environment where every
                   student can thrive and succeed.

@@ -5,7 +5,7 @@ function Grid3debac() {
     <section className="bg-white md:px-20 px-8">
       <div className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white ">
         <h1 className="bg-[#f5cd2c] p-3 rounded-full">
-          Prepare for IGCSE with EBacc - Educational excellence beyond
+          Prepare for IGCSE with  eBacc - Educational excellence beyond
           traditional courses.
         </h1>
       </div>
@@ -59,7 +59,7 @@ function Grid3debac() {
                   </span>
                 </summary>
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  At EBacc, our mission is to enhance students' academic
+                  At eBacc, our mission is to enhance students' academic
                   learning by complementing their initial school curriculum. We
                   prepare students to excel in IGCSE exams through a rigorous
                   and well-structured program.
@@ -142,7 +142,7 @@ function Grid3debac() {
                   </span>
                 </summary>
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  With EBacc, students benefit from quality education
+                  With eBacc, students benefit from quality education
                   supplemented by live sessions with our qualified instructors,
                   ensuring thorough and personalized preparation for IGCSE
                   exams.

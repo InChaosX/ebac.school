@@ -11,17 +11,22 @@ function Heroe() {
             data-aos-once="true"
             className="my-4 md:text-5xl text-3xl md:mt-1 mt-20 font-bold leading-tight text-darken"
           >
-            <span className="text-[#cc2132]">Studying</span>{" "}
-            <span className="text-[#061770]">Online is now much easier</span>
+            {/* Studying Online with eBacc - Your Path to English Baccalaureate
+            Success */}
+            <span className="text-[#cc2132]">Studying Online with eBacc</span>{" "}
+            <span className="text-[#061770]">
+              - Your Path to English Baccalaureate
+            </span>
           </h1>
           <p
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-delay="300"
-            className="leading-normal text-2xl mb-8 font-light"
+            className="leading-normal text-2xl mb-8 font-thin"
           >
-            Join Ebacc today and unlock your full academic potential with expert
-            guidance and personalized learning.
+            Join eBacc today and unlock your full academic potential with expert
+            guidance and personalized learning. As a dedicated English
+            Baccalaureate platform, we prepare you for IGCSE success.
           </p>
           <div
             data-aos="fade-up"

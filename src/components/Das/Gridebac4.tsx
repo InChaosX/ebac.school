@@ -62,10 +62,15 @@ function Grid3debac4() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  To enroll in EBacc, students must be initially enrolled in a
+                  {/* To enroll in EBacc, students must be initially enrolled in a
                   school and engaged in a formal study program. This condition
                   ensures a strong educational foundation and supplementary
-                  preparation for IGCSE.
+                  preparation for IGCSE. */}
+                  To enroll in eBacc, students must provide a school transcript
+                  and a GL Assessment. Additionally, students will need to take
+                  the CAT4 test, which will be administered by us. These
+                  requirements ensure a strong educational foundation and
+                  comprehensive preparation for IGCSE success.
                 </p>
               </details>
 
@@ -110,7 +115,7 @@ function Grid3debac4() {
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
                   We are committed to providing a top-tier education that
-                  exceeds traditional academic expectations. EBacc prepares
+                  exceeds traditional academic expectations. eBacc prepares
                   students to excel not only in exams, but also in their future
                   academic life.
                 </p>
@@ -154,7 +159,7 @@ function Grid3debac4() {
                 </summary>
 
                 <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  The security of students' data is a top priority at EBacc. We
+                  The security of students' data is a top priority at eBacc. We
                   adhere to strict privacy standards to ensure a safe and
                   protected learning environment.
                 </p>
