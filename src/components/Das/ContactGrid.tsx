@@ -4,7 +4,7 @@ function ContactGrid() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white  ">
-        <h1 className="bg-[#f5cd2c] p-3 md:px-[350px] px-[50px] rounded-full ">
+        <h1 className="bg-[#77B5FE] p-3 md:px-[350px] px-[50px] rounded-full ">
           {/* Meet the team behind EBacc - Dedicated to your academic success */}
           Get in Touch with Us - Join eBacc Today
         </h1>
@@ -16,7 +16,6 @@ function ContactGrid() {
           className="h-56 w-full object-cover sm:h-full hidden md:block"
         /> */}
         <div className="p-1 md:p-12 lg:px-16 lg:py-24">
-        
           <img
             alt=""
             src="/contac.jpg"
@@ -84,8 +83,6 @@ function ContactGrid() {
             </div>
           </div>
         </div>
-
-       
       </div>
     </section>
   );

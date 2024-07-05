@@ -361,19 +361,31 @@ function ContactModel() {
                         </label>
                       </div>
                     </div>
-                    <a
+                    {/* <a
                       href="#"
                       className="text-sm text-blue-700 hover:underline dark:text-blue-500"
                     >
                       Lost Password?
-                    </a>
+                    </a> */}
                   </div>
-                  <button
+                  {/* <button
                     type="submit"
                     className="w-full text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     submit
-                  </button>
+                  </button> */}
+                  <div className="flex justify-between">
+                    <input
+                      className="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                      type="submit"
+                      value="Send ➤"
+                    />
+                    <input
+                      className="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                      type="reset"
+                    />
+                  </div>
+                  
                 </form>
                 <ToastContainer
                   position="bottom-right"

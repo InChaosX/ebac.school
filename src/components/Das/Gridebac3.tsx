@@ -4,7 +4,7 @@ function Grid3debac3() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white">
-        <h1 className="bg-[#f5cd2c] p-3 rounded-full">
+        <h1 className="bg-[#77B5FE] p-3 rounded-full">
           PrepEngage with our interactive live sessions - Learn together,
           succeed together.
         </h1>

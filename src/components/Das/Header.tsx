@@ -185,19 +185,19 @@ function Header() {
               {isModalOpen && (
                 <div
                   id="authentication-modal"
-                  className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto mt-14"
+                  className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto mt-28"
                 >
-                  <div className="relative w-full max-w-[650px] px-4 md:h-auto mt-80 mb-8">
+                  <div className="relative w-full max-w-[650px] h-[30rem] px-10  py-32 md:h-auto mt-96 mb-8">
                     <div className="bg-blue-600 rounded-3xl shadow relative ">
                       <div className="flex justify-end p-2">
                         <button
                           type="button"
-                          className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                          className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center bg-red-600 dark:hover:text-white"
                           onClick={toggleModal}
                         >
                           <svg
                             className="w-5 h-5"
-                            fill="currentColor"
+                            fill="FFFFFF"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
                           >
@@ -211,38 +211,39 @@ function Header() {
                       </div>
 
                       <form
-                        className="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8 bg-blue-600 h-[55rem]  rounded-3xl "
+                        className="space-y-3 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8 bg-blue-600 h-[55rem]  rounded-3xl "
                         ref={form}
                         onSubmit={sendmail}
                       >
-                        <h3 className="text-xl font-medium text-white">
+                        <h3 className=" flex justify-center items-center mb-10 font-bold bg-[#cc2132] py-4 rounded-2xl cursor-pointer hover:text-[#061770] hover:bg-slate-200 text-xl  text-white">
                           Pre-registration Form
                         </h3>
 
-                        <div className="flex gap-6">
-                          <div>
-                            <label className="text-sm font-medium block mb-2 text-white">
-                              first Name
+                        <div className="flex flex-wrap -mx-3 mb-6">
+                          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                              Student's First Name
                             </label>
                             <input
+                              className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
+                              id="grid-first-name"
                               type="text"
+                              placeholder="Jane"
                               name="fn"
-                              id="text"
-                              className=" font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                              placeholder="fristname "
                               required
                             />
+                            {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                           </div>
-                          <div>
-                            <label className="text-sm font-medium text-white block mb-2 ">
-                              Last Name
+                          <div className="w-full md:w-1/2 px-3">
+                            <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                              Student's Last Name
                             </label>
                             <input
+                              className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 mr-9 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black "
+                              id="grid-last-name"
                               type="text"
+                              placeholder="Doe"
                               name="ln"
-                              id="text"
-                              className=" font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                              placeholder="lastname"
                               required
                             />
                           </div>
@@ -250,7 +251,7 @@ function Header() {
                         {/* end fn ln */}
 
                         <div>
-                          <label className="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Date of Birth
                           </label>
                           <input
@@ -265,7 +266,7 @@ function Header() {
                         {/* end date of birth */}
 
                         <div>
-                          <label className="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Country
                           </label>
                           <select
@@ -285,7 +286,7 @@ function Header() {
                         </div>
 
                         <div>
-                          <label className="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             City
                           </label>
                           <select
@@ -294,11 +295,19 @@ function Header() {
                             className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
                             required
                           >
-                            <option value="" disabled>
+                            <option
+                              className="placeholder:text-gray-500"
+                              value=""
+                              disabled
+                            >
                               Select a city
                             </option>
                             {cityOptions.map((city) => (
-                              <option key={city} value={city}>
+                              <option
+                                className="placeholder:text-gray-500"
+                                key={city}
+                                value={city}
+                              >
                                 {city}
                               </option>
                             ))}
@@ -306,7 +315,7 @@ function Header() {
                         </div>
 
                         <div>
-                          <label className="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
                             Email
                           </label>
                           <input
@@ -314,40 +323,43 @@ function Header() {
                             name="em"
                             id="text"
                             className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                            placeholder="lastname"
+                            placeholder="Email"
                             required
                           />
                         </div>
 
                         <div>
-                          <label className="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">
-                            Are You Curently
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            Are You Currently
                           </label>
                           <div className=" space-y-4">
                             <label className="flex items-center">
                               <input
                                 type="radio"
                                 name="eb"
-                                value="red"
-                                checked={selectedColor === "red"}
+                                value="Being homeschooled"
+                                checked={selectedColor === "Being homeschooled"}
                                 onChange={handleColorChange}
-                                className="form-radio text-3xl  text-red-600"
+                                className="form-radio text-black-600"
                               />
                               <span className="ml-2 font-semibold text-white">
-                                Enrolled in a physical school
+                                Being homeschooled
                               </span>
                             </label>
                             <label className="flex items-center">
                               <input
                                 type="radio"
                                 name="eb"
-                                value="black"
-                                checked={selectedColor === "black"}
+                                value="Enrolled in a physical school"
+                                checked={
+                                  selectedColor ===
+                                  "Enrolled in a physical school"
+                                }
                                 onChange={handleColorChange}
-                                className="form-radio text-black-600"
+                                className="form-radio text-3xl  text-red-600"
                               />
                               <span className="ml-2 font-semibold text-white">
-                                Being homeschooled
+                                Enrolled in a physical school
                               </span>
                             </label>
                           </div>
@@ -356,8 +368,8 @@ function Header() {
                         {/* hhhhendchekbox */}
 
                         <div>
-                          <label className="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">
-                            current school
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            Current School
                           </label>
                           <input
                             type="text"
@@ -373,7 +385,7 @@ function Header() {
 
                         <div>
                           <label className="text-sm font-medium text-white block mb-2 ">
-                            year
+                            Year Group / Grade
                           </label>
                           <select
                             name="yg"
@@ -386,10 +398,10 @@ function Header() {
                             <option value="" disabled>
                               Select a year
                             </option>
-                            <option value="Italy">y7</option>
-                            <option value="USA">y8 </option>
-                            <option value="USA">y9 </option>
-                            <option value="USA">y10</option>
+                            <option value="Year 7">Year 7</option>
+                            <option value="Year 8">Year 8</option>
+                            <option value="Year 9">Year 9</option>
+                            <option value="Year 10">Year 10</option>
                           </select>
                         </div>
                         {/* endof y g */}
@@ -407,23 +419,62 @@ function Header() {
                             </div>
                             <div className="text-sm ml-3">
                               <label className="font-medium text-gray-900 dark:text-gray-300">
-                                Remember me
+                                I agree to the terms and conditions of EBacc.
                               </label>
                             </div>
                           </div>
-                          <a
+                          {/* <a
                             href="#"
                             className="text-sm text-blue-700 hover:underline dark:text-blue-500"
                           >
                             Lost Password?
-                          </a>
+                          </a> */}
                         </div>
-                        <button
+                        <div className="flex justify-between">
+                          <div className="flex items-start">
+                            <div className="flex items-center h-5">
+                              <input
+                                id="remember"
+                                aria-describedby="remember"
+                                type="checkbox"
+                                className="bg-gray-50 border border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                                required
+                              />
+                            </div>
+                            <div className="text-sm ml-3">
+                              <label className="font-medium text-gray-900 dark:text-gray-300">
+                                I agree to the privacy policy and understand how
+                                my data will be used.
+                              </label>
+                            </div>
+                          </div>
+                          {/* <a
+                            href="#"
+                            className="text-sm text-blue-700 hover:underline dark:text-blue-500"
+                          >
+                            Lost Password?
+                          </a> */}
+                        </div>
+                        {/* <button
                           type="submit"
-                          className="w-full text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                          className="w-full  text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         >
                           submit
-                        </button>
+                        </button> */}
+                        <div className="flex justify-between">
+                          <button
+                            className="shadow bg-blue-800 hover:bg-indigo-700 text-white font-bold py-2 p-9 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="submit"
+                            value="Send ➤"
+                          >
+                            Submit
+                          </button>
+
+                          <input
+                            className="shadow bg-blue-800 hover:bg-indigo-700 text-white font-bold py-2 p-10 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="reset"
+                          />
+                        </div>
                       </form>
                       <ToastContainer
                         position="bottom-right"

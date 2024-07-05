@@ -4,7 +4,7 @@ function Grid3debac4() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white  ">
-        <h1 className="bg-[#f5cd2c] p-3 rounded-full">
+        <h1 className="bg-[#77B5FE] p-3 rounded-full">
           eBacc for your academic success - Your education, our priority.
         </h1>
       </div>
@@ -66,11 +66,16 @@ function Grid3debac4() {
                   school and engaged in a formal study program. This condition
                   ensures a strong educational foundation and supplementary
                   preparation for IGCSE. */}
-                  To enroll in eBacc, students must provide a school transcript
+                  {/* To enroll in eBacc, students must provide a school transcript
                   and a GL Assessment. Additionally, students will need to take
                   the CAT4 test, which will be administered by us. These
                   requirements ensure a strong educational foundation and
-                  comprehensive preparation for IGCSE success.
+                  comprehensive preparation for IGCSE success. */}
+                  To enroll in eBacc, students must provide a school transcript
+                  and. Additionally, students will need to take the GL
+                  Assessment CAT4 test. These requirements ensure a strong
+                  educational foundation and comprehensive preparation
+                  for IGCSE success
                 </p>
               </details>
 
