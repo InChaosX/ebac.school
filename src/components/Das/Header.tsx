@@ -185,9 +185,9 @@ function Header() {
               {isModalOpen && (
                 <div
                   id="authentication-modal"
-                  className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto md:mt-28 -mt-80 mb-14 top-10"
+                  className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto  top-30"
                 >
-                  <div className="relative w-full max-w-[650px] h-[30rem] px-10  py-32 md:h-[30rem] mt-96 mb-8">
+                  <div className="relative w-full max-w-[650px] h-[30rem] px-10  py-32 md:h-[30rem]  -mt-36   top-30">
                     <div className="bg-blue-600 rounded-3xl shadow relative ">
                       <div className="flex justify-end p-2">
                         <button
