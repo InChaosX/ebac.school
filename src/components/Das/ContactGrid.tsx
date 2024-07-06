@@ -43,14 +43,23 @@ function ContactGrid() {
                 <input
                   className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="text"
-                  placeholder="Name"
+                  placeholder="Parent's Full Name
+"
                   name="name"
                 />
 
                 <input
                   className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="email"
-                  placeholder="Email"
+                  placeholder="Email Address 
+"
+                  name="email"
+                />
+                <input
+                  className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  type="tel"
+                  placeholder="Phone Number 
+"
                   name="email"
                 />
 

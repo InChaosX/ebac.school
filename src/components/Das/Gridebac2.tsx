@@ -1,6 +1,13 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 
 function Grid3debac2() {
+    const [activeIndex, setActiveIndex] = useState(0); // State to track active accordion
+
+    const toggleAccordion = (index) => {
+      setActiveIndex(index === activeIndex ? -1 : index); // Toggle accordion
+    };
+    
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white">
@@ -176,3 +183,4 @@ function Grid3debac2() {
 }
 
 export default Grid3debac2;
+

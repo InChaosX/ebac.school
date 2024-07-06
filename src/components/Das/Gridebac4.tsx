@@ -75,7 +75,7 @@ function Grid3debac4() {
                   Additionally, students will need to take the GL
                   Assessment CAT4 test. These requirements ensure a strong
                   educational foundation and comprehensive preparation
-                  for IGCSE success
+                  for IGCSE success.
                 </p>
               </details>
 

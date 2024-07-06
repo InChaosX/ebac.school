@@ -39,7 +39,7 @@ function Grid3debac() {
                 <summary
                   className={`flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 p-2 rounded-2xl ${
                     activeIndex === 0
-                      ? "bg-[#c71e2f]"
+                      ? "bg-[#c71e2f] text-white"
                       : "bg-white text-gray-700 font-medium text-sm h-12 px-6 rounded-2xl shadow-md hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus:border-2 focus:border-blue-500 transition-all duration-300 ease-in-out active:shadow-lg disabled:shadow-none "
                   }`}
                   onClick={() => handleClick(1)}
@@ -97,7 +97,7 @@ function Grid3debac() {
                 <summary
                   className={`flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 p-2 rounded-2xl ${
                     activeIndex === 1
-                      ? "bg-[#c71e2f]"
+                      ? "bg-[#c71e2f] text-white"
                       : "bg-white text-gray-700 font-medium text-sm h-12 px-6 rounded-2xl shadow-md hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus:border-2 focus:border-blue-500 transition-all duration-300 ease-in-out active:shadow-lg disabled:shadow-none "
                   }`}
                   onClick={() => handleClick(1)}
@@ -141,11 +141,17 @@ function Grid3debac() {
                 </p>
               </details>
 
-              <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+              {/* <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"> */}
+              <details
+                className={`group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden ${
+                  activeIndex === 2 ? "open" : ""
+                }`}
+                open={activeIndex === 2}
+              >
                 <summary
                   className={`flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 p-2 rounded-2xl ${
                     activeIndex === 2
-                      ? "bg-[#c71e2f]"
+                      ? "bg-[#c71e2f] text-white"
                       : "bg-white text-gray-700 font-medium text-sm h-12 px-6 rounded-2xl shadow-md hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus:border-2 focus:border-blue-500 transition-all duration-300 ease-in-out active:shadow-lg disabled:shadow-none "
                   }`}
                   onClick={() => handleClick(2)}

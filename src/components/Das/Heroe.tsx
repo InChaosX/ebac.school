@@ -199,7 +199,7 @@ function Heroe() {
                       ref={form}
                       onSubmit={sendmail}
                     >
-                      <h3 className=" flex justify-center items-center mb-10 font-bold bg-[#cc2132] py-4 rounded-2xl cursor-pointer hover:text-[#061770] hover:bg-slate-200 text-xl  text-white">
+                      <h3 className=" flex justify-center items-center mb-10 font-bold bg-[#061770] py-4 rounded-2xl cursor-pointer hover:text-[#061770] hover:bg-slate-200 text-xl  text-white">
                         Pre-registration Form
                       </h3>
 
@@ -241,6 +241,7 @@ function Heroe() {
                         <input
                           type="date"
                           name="dof"
+                          placeholder="DD/MM/YYYY"
                           //   id="dob"
                           className=" font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
                           required
