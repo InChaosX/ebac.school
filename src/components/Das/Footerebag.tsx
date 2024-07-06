@@ -56,9 +56,9 @@ function Footerebag() {
           <a href="" className="pr-3 text-white">
             Contact
           </a>
-          <a href="" className="border-l border-white text-white px-3">
+          {/* <a href="" className="border-l border-white text-white px-3">
             Careers
-          </a>
+          </a> */}
           <a href="" className="border-l border-white text-white px-3">
             Privacy
           </a>

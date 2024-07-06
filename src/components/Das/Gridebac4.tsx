@@ -71,8 +71,8 @@ function Grid3debac4() {
                   the CAT4 test, which will be administered by us. These
                   requirements ensure a strong educational foundation and
                   comprehensive preparation for IGCSE success. */}
-                  To enroll in eBacc, students must provide a school transcript
-                  and. Additionally, students will need to take the GL
+                  To enroll in eBacc, students must provide a school transcript.
+                  Additionally, students will need to take the GL
                   Assessment CAT4 test. These requirements ensure a strong
                   educational foundation and comprehensive preparation
                   for IGCSE success
