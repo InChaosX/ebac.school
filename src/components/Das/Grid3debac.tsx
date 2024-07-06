@@ -1,6 +1,12 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 
 function Grid3debac() {
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const handleClick = (index) => {
+      setActiveIndex(index);
+    };
   return (
     <section className="bg-white md:px-20 px-8">
       <div className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white ">
@@ -19,11 +25,25 @@ function Grid3debac() {
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
             <div className="space-y-4">
-              <details
+              {/* <details
                 className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
                 open
+              > */}
+              <details
+                className={`group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden ${
+                  activeIndex === 0 ? "open" : ""
+                }`}
+                open={activeIndex === 0}
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 bg-gray-50 p-2 rounded-2xl">
+                {/* <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 bg-gray-50 p-2 rounded-2xl"> */}
+                <summary
+                  className={`flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 p-2 rounded-2xl ${
+                    activeIndex === 0
+                      ? "bg-[#c71e2f]"
+                      : "bg-white text-gray-700 font-medium text-sm h-12 px-6 rounded-2xl shadow-md hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus:border-2 focus:border-blue-500 transition-all duration-300 ease-in-out active:shadow-lg disabled:shadow-none "
+                  }`}
+                  onClick={() => handleClick(1)}
+                >
                   <h2 className="font-bold text-2xl py-3  rounded-3xl ">
                     Our Educational Mission
                   </h2>
@@ -66,8 +86,22 @@ function Grid3debac() {
                 </p>
               </details>
 
-              <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+              {/* <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"> */}
+              <details
+                className={`group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden ${
+                  activeIndex === 1 ? "open" : ""
+                }`}
+                open={activeIndex === 1}
+              >
+                {/* <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"> */}
+                <summary
+                  className={`flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 p-2 rounded-2xl ${
+                    activeIndex === 1
+                      ? "bg-[#c71e2f]"
+                      : "bg-white text-gray-700 font-medium text-sm h-12 px-6 rounded-2xl shadow-md hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus:border-2 focus:border-blue-500 transition-all duration-300 ease-in-out active:shadow-lg disabled:shadow-none "
+                  }`}
+                  onClick={() => handleClick(1)}
+                >
                   <h2 className="font-bold text-2xl">Learning Objectives</h2>
                   <span className="relative size-5 shrink-0">
                     <svg
@@ -108,7 +142,14 @@ function Grid3debac() {
               </details>
 
               <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+                <summary
+                  className={`flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 p-2 rounded-2xl ${
+                    activeIndex === 2
+                      ? "bg-[#c71e2f]"
+                      : "bg-white text-gray-700 font-medium text-sm h-12 px-6 rounded-2xl shadow-md hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus:border-2 focus:border-blue-500 transition-all duration-300 ease-in-out active:shadow-lg disabled:shadow-none "
+                  }`}
+                  onClick={() => handleClick(2)}
+                >
                   <h2 className="font-bold text-2xl">Why Choose eBacc?</h2>
                   <span className="relative size-5 shrink-0">
                     <svg

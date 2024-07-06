@@ -625,6 +625,7 @@ function Heroe() {
         </svg>
         <div className="bg-white w-full h-20 -mt-px"></div>
       </div>
+      <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
     </div>
   );
 }
