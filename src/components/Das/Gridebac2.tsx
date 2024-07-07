@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 
 function Grid3debac2() {
-    const [activeIndex, setActiveIndex] = useState(0); // State to track active accordion
+   const [openIndex, setOpenIndex] = useState(null);
 
-    const toggleAccordion = (index) => {
-      setActiveIndex(index === activeIndex ? -1 : index); // Toggle accordion
-    };
+   const handleToggle = (index) => {
+     setOpenIndex(openIndex === index ? null : index);
+   };
     
   return (
     <section className="bg-white md:px-20 px-8">
@@ -21,151 +21,81 @@ function Grid3debac2() {
         <img
           alt=""
           src="/student.jpg"
-          className="h-56 w-full object-cover sm:h-full"
+          className="h-56 w-full object-cover sm:h-full  border-4 border-[#29328f]"
         />
         <div className="p-1 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
-            <div className="space-y-4">
-              <details
-                className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
-                open
-              >
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Our IGCSE Courses</h2>
-
-                  <span className="relative size-5 shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                </summary>
-
-                <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  eBacc offers a variety of courses specifically designed to
-                  prepare students for IGCSE exams. Our programs align with
-                  international standards and are enriched by our experienced
-                  educational team.
-                </p>
-              </details>
-
-              <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">Subjects Covered</h2>
-
-                  <span className="relative size-5 shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute inset-0 opacity-100 group-open:opacity-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute inset-0 opacity-0 group-open:opacity-100"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                </summary>
-
-                <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  From Year 7 to Year 11, our courses include mathematics,
-                  sciences (biology, physics, chemistry), English, and French.
-                  Each subject is taught with a commitment to academic
-                  excellence and a deep understanding of concepts.
-                </p>
-              </details>
-
-              <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 className="font-bold text-2xl">
-                    Personalization of Learning
-                  </h2>
-
-                  <span className="relative size-5 shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute inset-0 opacity-100 group-open:opacity-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute inset-0 opacity-0 group-open:opacity-100"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                </summary>
-
-                <p className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
-                  At eBacc, we recognize the importance of personalized learning
-                  to meet the individual needs of students. Our courses offer
-                  optimal flexibility to adapt to varying learning paces of each
-                  student.
-                </p>
-              </details>
+            <div className="space-y-4 ">
+              {[
+                {
+                  title: "Our IGCSE Courses",
+                  content:
+                    "eBacc offers a variety of courses specifically designed to prepare students for IGCSE exams. Our programs align with international standards and are enriched by our experienced educational team",
+                },
+                {
+                  title: "Subjects Covered",
+                  content:
+                    "From Year 7 to Year 11, our courses include mathematics, sciences (biology, physics, chemistry), English, and French. Each subject is taught with a commitment to academic excellence and a deep understanding of concepts.",
+                },
+                {
+                  title: "Personalization of Learning",
+                  content:
+                    "At eBacc, we recognize the importance of personalized learning to meet the individual needs of students. Our courses offer optimal flexibility to adapt to varying learning paces of each student.",
+                },
+              ].map((item, index) => (
+                <div key={index} className="group">
+                  <div
+                    className={`flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-6 text-gray-900 ${
+                      openIndex === index
+                        ? "bg-red-500 text-white"
+                        : "bg-gray-100 shadow-2xl border-2 border-blue-500 "
+                    }`}
+                    onClick={() => handleToggle(index)}
+                  >
+                    <h2 className="font-bold text-2xl">{item.title}</h2>
+                    <span className="relative size-5 shrink-0">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`absolute -inset-1 size-8 ${
+                          openIndex === index ? "opacity-0" : "opacity-100"
+                        }`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`absolute -inset-1 size-8 ${
+                          openIndex === index ? "opacity-100" : "opacity-0"
+                        }`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  {openIndex === index && (
+                    <div className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
+                      {item.content}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
 
             {/* end */}

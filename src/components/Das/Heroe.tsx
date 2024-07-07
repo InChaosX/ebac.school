@@ -146,7 +146,7 @@ function Heroe() {
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-delay="300"
-            className="leading-normal text-2xl mb-8 font-thin"
+            className=" md:text-2xl text-1xl text-center md:text-left md:p-0 p-7 leading-7 mb-8 font-thin"
           >
             Join eBacc today and unlock your full academic potential with expert
             guidance and personalized learning. As a dedicated English
@@ -486,7 +486,7 @@ function Heroe() {
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-once="true"
-            className="absolute top-20 -left-6 sm:top-32 sm:left-10 md:top-40 md:left-16 lg:-left-0 lg:top-52 floating-4"
+            className="absolute top-20 -left-2 sm:top-32 sm:left-10 md:top-40 md:left-16 lg:-left-0 lg:top-52 floating-4"
           >
             <img
               className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-20"
@@ -498,90 +498,13 @@ function Heroe() {
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-once="true"
-            className="absolute top-20 right-10 sm:right-24 sm:top-28 md:top-36 md:right-32 lg:top-32   lg:-right-7 floating"
+            className="absolute top-20 -right-4 sm:right-24 sm:top-28 md:top-36 md:right-32 lg:top-32   lg:-right-7 floating"
           >
             <img
               className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-20"
               src="/clock3d.jpg"
             />
-            {/* <svg
-              className="h-16 sm:h-24"
-              viewBox="0 0 149 149"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_d)">
-                <rect
-                  x="40"
-                  y="32"
-                  width="69"
-                  height="69"
-                  rx="14"
-                  fill="#F3627C"
-                />
-              </g>
-              <rect
-                x="51.35"
-                y="44.075"
-                width="47.3"
-                height="44.85"
-                rx="8"
-                fill="white"
-              />
-              <path
-                d="M74.5 54.425V78.575"
-                stroke="#F25471"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M65.875 58.7375L65.875 78.575"
-                stroke="#F25471"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M83.125 63.9125V78.575"
-                stroke="#F25471"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <defs>
-                <filter
-                  id="filter0_d"
-                  x="0"
-                  y="0"
-                  width="149"
-                  height="149"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="8" />
-                  <feGaussianBlur stdDeviation="20" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0.825 0 0 0 0 0.300438 0 0 0 0 0.396718 0 0 0 0.26 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg> */}
+           
           </div>
           {/* <!-- ux className --> */}
           <div
@@ -591,7 +514,7 @@ function Heroe() {
             className="absolute bottom-14 -left-4 sm:left-2 sm:bottom-20 lg:bottom-24 lg:-left-4 floating"
           >
             <img
-              className="bg-white bg-opacity-80 rounded-lg h-20 sm:h-20"
+              className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-20"
               src="/teacher3d.jpg"
               alt=""
             />
