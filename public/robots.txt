@@ -26,4 +26,4 @@ Disallow: /temp/
 Disallow: /temporary/
 
 # Sitemap location
-Sitemap: https://www.ncukcasablanca.com/sitemap.xml
+Sitemap: https://www.ebacc.ma/sitemap.xml

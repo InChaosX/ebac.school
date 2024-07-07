@@ -1,6 +1,6 @@
 // next-sitemap.config.js
 module.exports = {
-  siteUrl: "https://www.ncukcasablanca.com",
+  siteUrl: "https://www.ebacc.ma/",
   generateRobotsTxt: true, // (optional) Generate robots.txt file
   changefreq: "weekly",
   priority: 0.8,
