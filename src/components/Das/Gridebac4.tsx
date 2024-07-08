@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 function Grid3debac4() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -88,7 +88,7 @@ function Grid3debac4() {
                     </span>
                   </div>
                   {openIndex === index && (
-                    <div className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
+                    <div className="mt-4 leading-relaxed text-gray-700 text-left font-medium p-4">
                       {item.content}
                     </div>
                   )}

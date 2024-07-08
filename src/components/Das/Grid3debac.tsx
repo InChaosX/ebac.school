@@ -1,15 +1,23 @@
 "use client"
 import React, { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function Grid3debac() {
-     const [openIndex, setOpenIndex] = useState(null);
+     const [openIndex, setOpenIndex] = useState(0);
 
      const handleToggle = (index) => {
        setOpenIndex(openIndex === index ? null : index);
      };
   return (
     <section className="bg-white md:px-20 px-8">
-      <div className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white ">
+      <div
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-delay="300"
+        className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white "
+      >
         <h1 className="bg-[#77B5FE] p-3 rounded-full">
           Prepare for IGCSE with  eBacc - Educational excellence beyond
           traditional courses.
@@ -21,11 +29,13 @@ function Grid3debac() {
           alt=""
           src="/clear-objective.jpg"
           className="h-56 w-full object-cover sm:h-full block sm:hidden  border-4 border-[#29328f]"
+          data-aos="fade-right"
+          data-aos-duration="3000"
         />
         <div className="p-1 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
-            <div className="space-y-4 ">
+            <div className="space-y-4 " data-aos="fade-up-right">
               {[
                 {
                   title: "Our Educational Mission",
@@ -89,7 +99,7 @@ function Grid3debac() {
                     </span>
                   </div>
                   {openIndex === index && (
-                    <div className="mt-4 leading-relaxed text-gray-700 text-left font-medium">
+                    <div className="mt-4 leading-relaxed text-gray-700 text-left font-medium p-4">
                       {item.content}
                     </div>
                   )}

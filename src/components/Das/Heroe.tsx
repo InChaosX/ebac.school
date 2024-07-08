@@ -6,13 +6,22 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { T, useTranslate } from "@tolgee/react";
 
-import { LangSelector } from "../LangSelector";
-import { Link } from "react-scroll";
-
+// import { LangSelector } from "../LangSelector";
+// import { Link } from "react-scroll";
+import AOS from "aos";
+AOS.init();
 function Heroe() {
   const { t } = useTranslate();
   // nnnnn
 
+  // radio
+  const [selectedOption, setSelectedOption] = useState("");
+  const [currentSchool, setCurrentSchool] = useState("");
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+  // radio
   // const { t } = useTranslate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedColor, setSelectedColor] = useState("");
@@ -46,8 +55,86 @@ function Heroe() {
 
   //   ddddddddd
 
+  // const form = useRef(null);
+  // const sendmail = (e: any) => {
+  //   e.preventDefault();
+
+  //   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+  //   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+  //   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+  //   // Custom validation
+  //   const formData = new FormData(form.current!);
+  //   const fn = formData.get("fn");
+  //   const ln = formData.get("ln");
+  //   const dof = formData.get("dof");
+  //   const cn = formData.get("cn");
+  //   const ct = formData.get("ct");
+  //   const em = formData.get("em");
+  //   const eb = formData.get("eb");
+  //   const cs = formData.get("cs");
+  //   const yg = formData.get("yg");
+
+  //   if (!fn && !ln && !dof && !cn && !dof && !ct && !em && !eb && !cs && !yg) {
+  //     // toast.error("Please fill in all fields");
+
+  //     toast.error("please fill all this form");
+
+  //     return;
+  //   }
+
+  //   if (!fn) {
+  //     toast.error(t("fn"));
+  //     return;
+  //   }
+
+  //   if (!ln) {
+  //     toast.error(t("ln"));
+  //     return;
+  //   }
+
+  //   if (!dof) {
+  //     toast.error(t("dof"));
+  //     return;
+  //   }
+
+  //   if (!cn) {
+  //     toast.error(t("cn"));
+  //     return;
+  //   }
+  //   if (!ct) {
+  //     toast.error(t("ct"));
+  //     return;
+  //   }
+  //   if (!em) {
+  //     toast.error("emm");
+  //     return;
+  //   }
+  //   if (!eb) {
+  //     toast.error(t("eb"));
+  //     return;
+  //   }
+  //   if (!cs) {
+  //     toast.error(t("cs"));
+  //     return;
+  //   }
+  //   if (!yg) {
+  //     toast.error(t("yg"));
+  //     return;
+  //   }
+
+  //   emailjs.sendForm(serviceId, templateId, form.current ?? "", publicKey).then(
+  //     () => {
+  //       toast.success(t("succes"));
+  //     },
+  //     () => {
+  //       toast.error(t("error"));
+  //     }
+  //   );
+  //   e.target.reset();
+  // };
   const form = useRef(null);
-  const sendmail = (e: any) => {
+  const sendmail = (e) => {
     e.preventDefault();
 
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
@@ -66,60 +153,72 @@ function Heroe() {
     const cs = formData.get("cs");
     const yg = formData.get("yg");
 
-    if (!fn && !ln && !dof && !cn && !dof && !ct && !em && !eb && !cs && !yg) {
-      // toast.error("Please fill in all fields");
-
-      toast.error("please fill all this form");
-
+    if (
+      !fn ||
+      !ln ||
+      !dof ||
+      !cn ||
+      !ct ||
+      !em ||
+      !eb ||
+      (!cs && selectedOption === "Enrolled in a physical school") ||
+      !yg
+    ) {
+      toast.error("Please fill in all required fields");
       return;
     }
 
     if (!fn) {
-      toast.error(t("fn"));
+      toast.error("First name is required");
       return;
     }
 
     if (!ln) {
-      toast.error(t("ln"));
+      toast.error("Last name is required");
       return;
     }
 
     if (!dof) {
-      toast.error(t("dof"));
+      toast.error("Date of birth is required");
       return;
     }
 
     if (!cn) {
-      toast.error(t("cn"));
+      toast.error("Country is required");
       return;
     }
+
     if (!ct) {
-      toast.error(t("ct"));
+      toast.error("City is required");
       return;
     }
+
     if (!em) {
-      toast.error("emm");
+      toast.error("Email is required");
       return;
     }
+
     if (!eb) {
-      toast.error(t("eb"));
+      toast.error("Enrollment status is required");
       return;
     }
-    if (!cs) {
-      toast.error(t("cs"));
+
+    if (selectedOption === "Enrolled in a physical school" && !cs) {
+      toast.error("Current school is required");
       return;
     }
+
     if (!yg) {
-      toast.error(t("yg"));
+      toast.error("Year group is required");
       return;
     }
 
     emailjs.sendForm(serviceId, templateId, form.current ?? "", publicKey).then(
       () => {
-        toast.success(t("succes"));
+        toast.success("Form submitted successfully");
       },
       () => {
-        toast.error(t("error"));
+        toast.error("Form submission failed");
       }
     );
     e.target.reset();
@@ -131,8 +230,9 @@ function Heroe() {
         {/* <!--Left Col--> */}
         <div className="flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
           <h1
-            data-aos="fade-right"
-            data-aos-once="true"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
             className="my-4 md:text-5xl text-3xl md:mt-1 mt-20 font-bold leading-tight text-darken"
           >
             {/* Studying Online with eBacc - Your Path to English Baccalaureate
@@ -143,9 +243,7 @@ function Heroe() {
             </span>
           </h1>
           <p
-            data-aos="fade-down"
-            data-aos-once="true"
-            data-aos-delay="300"
+            data-aos="fade-up-right"
             className=" md:text-2xl text-1xl text-center md:text-left md:p-0 p-7 leading-7 mb-8 font-thin"
           >
             Join eBacc today and unlock your full academic potential with expert
@@ -241,14 +339,10 @@ function Heroe() {
                         <input
                           type="date"
                           name="dof"
-                          placeholder="DD/MM/YYYY"
-                          //   id="dob"
                           className=" font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
                           required
                         />
                       </div>
-
-                      {/* end date of birth */}
 
                       <div>
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
@@ -281,9 +375,12 @@ function Heroe() {
                           required
                         >
                           <option
-                            className="placeholder:text-gray-500"
+                            // className="placeholder:text-gray-500"
+
                             value=""
                             disabled
+                            selected
+                            className="text-gray-500"
                           >
                             Select a city
                           </option>
@@ -314,59 +411,70 @@ function Heroe() {
                       </div>
 
                       <div>
-                        <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          Are You Currently
-                        </label>
-                        <div className=" space-y-4">
-                          <label className="flex items-center">
-                            <input
-                              type="radio"
-                              name="eb"
-                              value="Being homeschooled"
-                              checked={selectedColor === "Being homeschooled"}
-                              onChange={handleColorChange}
-                              className="form-radio text-black-600"
-                            />
-                            <span className="ml-2 font-semibold text-white">
-                              Being homeschooled
-                            </span>
+                        <div>
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            Are You Currently
                           </label>
-                          <label className="flex items-center">
-                            <input
-                              type="radio"
-                              name="eb"
-                              value="Enrolled in a physical school"
-                              checked={
-                                selectedColor ===
-                                "Enrolled in a physical school"
-                              }
-                              onChange={handleColorChange}
-                              className="form-radio text-3xl  text-red-600"
-                            />
-                            <span className="ml-2 font-semibold text-white">
-                              Enrolled in a physical school
-                            </span>
+                          <div className="space-y-4">
+                            <label className="flex items-center">
+                              <input
+                                type="radio"
+                                name="eb"
+                                value="Being homeschooled"
+                                checked={
+                                  selectedOption === "Being homeschooled"
+                                }
+                                onChange={handleOptionChange}
+                                className="form-radio text-black-600"
+                              />
+                              <span className="ml-2 font-semibold text-white">
+                                Homeschooled
+                              </span>
+                            </label>
+                            <label className="flex items-center">
+                              <input
+                                type="radio"
+                                name="eb"
+                                value="Enrolled in a physical school"
+                                checked={
+                                  selectedOption ===
+                                  "Enrolled in a physical school"
+                                }
+                                onChange={handleOptionChange}
+                                className="form-radio text-3xl text-red-600"
+                              />
+                              <span className="ml-2 font-semibold text-white">
+                                Enrolled in a physical school
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+
+                        {/* Current School Input */}
+                        <div>
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            Current School
                           </label>
+                          <input
+                            type="text"
+                            name="cs"
+                            id="text"
+                            className={`font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black ${
+                              selectedOption === "Being homeschooled"
+                                ? "bg-gray-500"
+                                : "bg-white"
+                            }`}
+                            // className="font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
+                            placeholder="Current School"
+                            required={
+                              selectedOption === "Enrolled in a physical school"
+                            }
+                            disabled={selectedOption === "Being homeschooled"}
+                            value={currentSchool}
+                            onChange={(e) => setCurrentSchool(e.target.value)}
+                          />
                         </div>
                       </div>
-
-                      {/* hhhhendchekbox */}
-
-                      <div>
-                        <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          Current School
-                        </label>
-                        <input
-                          type="text"
-                          name="cs"
-                          id="text"
-                          className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                          placeholder="current school"
-                          required
-                        />
-                      </div>
-
-                      {/* end of current schol */}
 
                       <div>
                         <label className="text-sm font-medium text-white block mb-2 ">
@@ -504,7 +612,6 @@ function Heroe() {
               className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-20"
               src="/clock3d.jpg"
             />
-           
           </div>
           {/* <!-- ux className --> */}
           <div
