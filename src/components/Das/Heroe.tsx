@@ -154,7 +154,7 @@ function Heroe() {
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
-            className="my-4 md:text-5xl text-3xl md:mt-1 mt-20 font-bold leading-tight text-darken"
+            className="my-4 md:text-5xl text-3xl md:-mt-12 mt-20 font-bold leading-tight text-darken"
           >
             {/* Studying Online with eBacc - Your Path to English Baccalaureate
             Success */}
@@ -164,7 +164,7 @@ function Heroe() {
           <div>
             <p
               data-aos="fade-up-right"
-              className=" md:text-2xl text-1xl text-center md:text-left md:p-0 p-7 leading-7 mb-8 font-thin"
+              className=" md:text-2xl text-1xl text-center mt-2  md:text-left md:p-0 p- leading-7 mb-8 font-thin"
             >
               {/* Join eBacc today and unlock your full academic potential with expert
             guidance and personalized learning. As a dedicated English
@@ -183,7 +183,7 @@ function Heroe() {
             px-9 btn-zoom */}
             <button
               onClick={toggleModal}
-              className="lg:mx-0 bg-[#c71e2f] mb-10  text-white text-xl font-bold rounded-full py-6 cursor-pointer px-20 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+              className="lg:mx-0 bg-[#c71e2f]  text-white text-xl font-bold rounded-full py-6 cursor-pointer px-20 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
             >
               {/* Join now ! */}
               {t("Rejoignez-nous maintenant")}
