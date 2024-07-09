@@ -12,7 +12,7 @@ function Grid3debac4() {
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white  ">
-        <h1 className="bg-[#77B5FE] p-3 rounded-full">
+        <h1 className="bg-[#77B5FE] p-3 rounded-full w-full">
           {/* eBacc for your academic success - Your education, our priority. */}
           {t("prepare for IGCSE4")}
         </h1>
@@ -46,7 +46,7 @@ function Grid3debac4() {
                   <div
                     className={`flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-6 text-gray-900 ${
                       openIndex === index
-                        ? "bg-red-500 text-white"
+                        ? "bg-[#c71e2f]  text-white"
                         : "bg-gray-100 shadow-2xl border-2 border-blue-500 "
                     }`}
                     onClick={() => handleToggle(index)}
