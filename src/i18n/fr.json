@@ -10,7 +10,8 @@
   "path": "- Votre chemin vers l'English Baccalaureate",
 
   "heroo": "Rejoignez eBacc aujourd'hui et libérez votre plein potentiel académique avec des conseils d'experts et un apprentissage personnalisé. En tant que plateforme dédiée à l'English Baccalaureate, nous vous préparons à réussir aux examens IGCSE.",
-  "prepare for IGCSE" : "Préparez-vous pour l'IGCSE avec eBacc - L'excellence éducative au-delà des cours traditionnels.",
+
+  "prepare for IGCSE" : "Préparez-vous pour l'IGCSE avec eBacc - L'excellence éducative au-delà des cours traditionnels",
   "Notre mission éducative" :"Notre mission éducative",
  "At eBacc": "Chez eBacc, notre mission est d'améliorer l'apprentissage académique des élèves en complétant leur cursus scolaire initial. Nous préparons les élèves à exceller aux examens IGCSE grâce à un programmerigoureux et bien structuré.",
  "Objectifs d'apprentissage" :"Objectifs d'apprentissage",
@@ -29,7 +30,7 @@
 
 
 
-  "prepare for IGCSE3" : "Engagez-vous avec nos sessions live interactives - Apprendre ensemble, réussir ensemble.",
+  "prepare for IGCSE3" : "Engagez-vous avec nos sessions live interactives - Apprendre ensemble, réussir ensemble",
   "Notre mission éducative3" :"Sessions live structurées",
  "At eBacc3": "Les élèves participent à des sessions live hebdomadaires de 2 heures par matière, animées par notre équipe pédagogique dédiée. Ces sessions offrent une occasion unique d'approfondir la compréhension des concepts et de poser des questions en temps réel.",
  "Objectifs d'apprentissage3" :"Soutien pédagogique",
@@ -38,18 +39,18 @@
   "With eBacc3":"Les élèves bénéficient d'une interaction directe avec des instructeurs qualifiés passionnés par l'enseignement et dédiés à leur réussite académique. Cette connexion personnelle renforcel'engagement des élèves et favorise un apprentissage efficace.",
 
 
-  "prepare for IGCSE4" : "eBacc pour votre réussite académique - Votre éducation, notre priorité.",
+  "prepare for IGCSE4" : "eBacc pour votre réussite académique - Votre éducation, notre priorité",
   "Notre mission éducative4" :"Conditions d'inscription",
  "At eBacc4": "Pour s'inscrire à eBacc, les élèves doivent fournir un relevé de notes scolaire. De plus, les élèves devront passer les tests GL Assessment et CAT4. Ces exigences garantissent une base éducative solide et une préparation complète pour réussir aux IGCSE.",
  "Objectifs d'apprentissage4" :"Engagement envers l'excellence",
  "We aim4" :"Nous nous engageons à offrir une éducation de premier plan qui dépasse les attentes académiques traditionnelles. eBacc prépare les élèves à exceller non seulement aux examens, mais aussi dans leurvieacaémiqe future.",
   "Why Choose eBacc?4" :"Sécurité et confidentialité",
-  "With eBacc4":"La sécurité des données des élèves est une priorité absolue chez eBacc. Nous respectons des normes strictes en matière de confidentialité pour assurer un environnement d'apprentissage sûr et protégé..",
+  "With eBacc4":"La sécurité des données des élèves est une priorité absolue chez eBacc. Nous respectons des normes strictes en matière de confidentialité pour assurer un environnement d'apprentissage sûr et protégé.",
 
-   "contact": "Prenez contact avec nous - Rejoignez eBacc aujourd'hui",
+   "contact": "Prenez contact avec nous - Rejoignez eBacc aujourd'hui !",
    "Contactez-nous !" : "Contactez-nous !" ,
 
-   "fill":"Remplissez le formulaire ci-dessous pour nous envoyer un message.",
+   "fill":"Remplissez le formulaire ci-dessous pour nous envoyer un message",
 
   "pn": "Nom complet du parent",
   "ad":"Adresse e-mail",
@@ -73,14 +74,36 @@
 "form7":"Êtes-vous actullement",
 "form8":"Scolarisé à la maison",
 "form9":"Inscrit dans une école physique",
-"form10":"(é) Ecole actuelle",
+"form10":"École actuelle",
 "form22": "Niveau scolaire",
 "form11":"Year 7 ( Première année collège )",
 "form12":"Year 8 ( Deuxième année collège )",
 "form13":"Year 9 ( Troisième année collège )",
 "form14":"Year 10 ( Tronc commun )",
 "form15":"J'accepte les conditions générales d'EBacc.",
-"form16":"J'accepte la politique de confidentialité et comprends comment mes données seront utilisées."
+"form16":"J'accepte la politique de confidentialité et comprends comment mes données seront utilisées.",
+
+
+"Sélectionnez un pays": "Sélectionnez un pays",
+"Sélectionnez une ville": "Sélectionnez une ville",
+"Sélectionnez un niveau scolaire": "Sélectionnez un niveau scolaire",
+"Numéro de téléphone": "",
+"Souscrivez à notre Newsletter": "Souscrivez à notre Newsletter",
+"Souscrire": "Subscribe",
+"Votre Email": "Your Email",
+"Contact" :"Contact",
+"Confidentialité":"Confidentialité",
+"Termes et conditions":"Termes et conditions",
+"Current School":"Current School" ,
+
+
+"Please fill in all required fields":"about",
+"First name is requireds":"amazing",
+"Last name is required":"hekoo",
+"Date of birth is required":"bbbbb",
+"Country is required":"xxxxxxxxxxx",
+"City is required":"sssssssssssssssssss",
+"Email is required":"aaaaaaaaaaaaaaaaaaaaaa"
 
 
 

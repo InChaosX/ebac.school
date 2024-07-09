@@ -1,9 +1,79 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { T, useTranslate } from "@tolgee/react";
-import { Button } from "react-scroll";
+
+import emailjs from "@emailjs/browser";
+// import { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function ContactGrid() {
+
+   const form = useRef(null);
+   const sendmail = (e: any) => {
+     e.preventDefault();
+
+     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID1!;
+     const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID1!;
+     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY1!;
+
+     // Custom validation
+     const formData = new FormData(form.current!);
+     const pfl = formData.get("pfl");
+     const pemail = formData.get("pemail");
+     const ptel = formData.get("ptel");
+     const psb = formData.get("psb");
+     const pms = formData.get("pms");
+
+     if (!pfl && !pemail && !ptel && !psb && !pms) {
+       // toast.error("Please fill in all fields");
+
+       toast.error(t("toastMessage"));
+
+       return;
+     }
+
+     if (!pfl) {
+       toast.error(t("fnbbame"));
+       return;
+     }
+
+     if (!pemail) {
+       toast.error(t("embbail"));
+       return;
+     }
+
+     if (!ptel) {
+       toast.error(t("phobbne"));
+       return;
+     }
+
+     if (!psb) {
+       toast.error(t("subject"));
+       return;
+     }
+      if (!pms) {
+        toast.error(t("message"));
+        return;
+      }
+
+
+     emailjs
+       .sendForm(serviceId, templateId, form.current ?? "", publicKey)
+       .then(
+         () => {
+           toast.success(t("succes"));
+         },
+         () => {
+           toast.error(t("error"));
+         }
+       );
+     e.target.reset();
+   };
+
+
+
   const { t } = useTranslate();
   return (
     <section className="bg-white md:px-20 px-8">
@@ -46,39 +116,43 @@ function ContactGrid() {
                 </p>
               </div>
 
-              <form>
+              <form ref={form} onSubmit={sendmail}>
                 <input
                   className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="text"
                   placeholder={t("pn")}
-                  name="name"
+                  name="pfl"
+                  required
                 />
 
                 <input
                   className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="email"
                   placeholder={t("ad")}
-                  name="email"
+                  name="pemail"
+                  required
                 />
                 <input
                   className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="tel"
-                  placeholder={t("pn")}
-                  name="email"
+                  placeholder={t("nt")}
+                  name="ptel"
+                  required
                 />
 
                 <input
                   className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="text"
                   placeholder={t("sb")}
-                  name="_subject"
+                  name="psb"
+                  
                 />
 
                 <textarea
                   className="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   // type="text"
                   placeholder={t("ms")}
-                  name="message"
+                  name="pms"
                 ></textarea>
 
                 <div className="flex justify-between">
@@ -100,12 +174,14 @@ function ContactGrid() {
                     {t("Réinitialiser")}
                   </button>
 
-                  {/* <input
-                    className="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="reset"
-                  /> */}
                 </div>
               </form>
+              <ToastContainer
+                position="bottom-right"
+                hideProgressBar={true}
+                theme="light"
+                autoClose={2000}
+              />
             </div>
           </div>
         </div>

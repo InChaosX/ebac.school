@@ -13,7 +13,7 @@
 
 "heroo": "Join eBacc today and unlock your full academic potential with expert guidance and personalized learning. As a dedicated English Baccalaureate platform, we prepare you for IGCSE success.",
 
-"prepare for IGCSE" : "Prepare for IGCSE with  eBacc - Educational excellence beyond traditional courses.",
+"prepare for IGCSE" : "Prepare for IGCSE with  eBacc - Educational excellence beyond traditional courses",
 "Notre mission éducative" :"Our Educational Mission",
 "At eBacc": "At eBacc, our mission is to enhance students' academic learning by complementing their initial school curriculum. We prepare students to excel in IGCSE exams through a rigorous and well-structured program.",
 "Objectifs d'apprentissage" :"Learning Objectives",
@@ -21,7 +21,7 @@
 "Why Choose eBacc?" :"Why Choose eBacc?",
 "With eBacc":"With eBacc, students benefit from quality education supplemented by live sessions with our qualified instructors, ensuring thorough and personalized preparation for IGCSE exams.",
 
- "prepare for IGCSE2" : "Explore our range of IGCSE courses with eBacc - Your path to academic excellence.",
+ "prepare for IGCSE2" : "Explore our range of IGCSE courses with eBacc - Your path to academic excellence",
   "Notre mission éducative2" :"Our IGCSE Courses",
  "At eBacc2": "eBacc offers a variety of courses specifically designed to prepare students for IGCSE exams. Our programs align with international standards and are enriched by our experienced educational team.",
  "Objectifs d'apprentissage2" :"Subjects Covered",
@@ -40,7 +40,7 @@
   "With eBacc3":"Students benefit from direct interaction with qualified instructors who are passionate about teaching and dedicated to their academic success. This personal connection enhances student engagement and promotes effective learning.",
 
 
-  "prepare for IGCSE4" : "eBacc for your academic success - Your education, our priority.",
+  "prepare for IGCSE4" : "eBacc for your academic success - Your education, our priority",
   "Notre mission éducative4" :"Registration Conditions",
  "At eBacc4": "To enroll in eBacc, students must provide a school transcript. Additionally, students will need to take the GL Assessment CAT4 test. These requirements ensure a strong educational foundation and comprehensive preparation for IGCSE success.",
  "Objectifs d'apprentissage4" :"Commitment to Excellence",
@@ -49,12 +49,12 @@
   "With eBacc4":"The security of students' data is a top priority at eBacc. We adhere to strict privacy standards to ensure a safe and protected learning environment.",
 
 
-  "contact": "Get in Touch with Us - Join eBacc Today",
+  "contact": "Get in Touch with Us - Join eBacc Today !",
    "Contactez-nous !" : "Contact Us !" ,
 
 
 
-  "fill":"Remplissez le formulaire ci-dessous pour nous envoyer un message.",
+  "fill":"Fill up the form below to send us a message",
 
   "pn": "Parent's Full Name",
   "ad":"Email Address",
@@ -84,7 +84,28 @@
 "form13":"Year 9 ( Troisième année collège )",
 "form14":"Year 10 ( Tronc commun )",
 "form15":"J'accepte les conditions générales d'EBacc.",
-"form16":"J'accepte la politique de confidentialité et comprends comment mes données seront utilisées."
+"form16":"J'accepte la politique de confidentialité et comprends comment mes données seront utilisées.",
+"Sélectionnez un pays": "Select a country",
+"Sélectionnez une ville": "Select a city",
+"Sélectionnez un niveau scolaire": "Select a year",
+"Numéro de téléphone": "",
+"Souscrivez à notre Newsletter": "Subscribe to get our Newsletter",
+"Souscrire": "Subscribe",
+"Votre Email": "Your Email",
+"Contact" :"Contact",
+"Confidentialité":"Privacy",
+"Termes et conditions":"Terms & Conditions",
+"Current School":"Current School",
+
+
+
+"Please fill in all required fields":"about",
+"First name is requireds":"amazing",
+"Last name is required":"hekoo",
+"Date of birth is required":"bbbbb",
+"Country is required":"xxxxxxxxxxx",
+"City is required":"sssssssssssssssssss",
+"Email is required":"aaaaaaaaaaaaaaaaaaaaaa"
   
 
 }

@@ -282,7 +282,8 @@ function Heroe() {
                           required
                         >
                           <option value="" disabled>
-                            Select a country
+                            {/* Select a country */}
+                            {t("Sélectionnez un pays")}
                           </option>
                           <option value="Italy">Italy</option>
                           <option value="USA">USA</option>
@@ -307,7 +308,8 @@ function Heroe() {
                             selected
                             className="text-gray-500"
                           >
-                            Select a city
+                            {/* Select a city */}
+                            {t("Sélectionnez une ville")}
                           </option>
                           {cityOptions.map((city) => (
                             <option
@@ -377,20 +379,20 @@ function Heroe() {
 
                         {/* Current School Input */}
                         <div>
-                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mt-5 pb-2 ">
                             {t("form10")}
                           </label>
                           <input
                             type="text"
                             name="cs"
                             id="text"
-                            className={`font-semibold sm:text-sm rounded-lg  block w-full p-2.5 text-black ${
+                            className={`font-semibold sm:text-sm rounded-lg  block w-full p-2.5 text-black  ${
                               selectedOption === "Being homeschooled"
                                 ? "bg-gray-500"
                                 : "bg-white"
                             }`}
                             // className="font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                            placeholder="Current School"
+                            placeholder={t("form10")}
                             required={
                               selectedOption === "Enrolled in a physical school"
                             }
@@ -405,21 +407,21 @@ function Heroe() {
                         <label className="text-sm font-medium text-white block mb-2 ">
                           {t("form22")}
                         </label>
+
                         <select
                           name="yg"
-                          id="country"
+                          // id="country"
                           className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                          // value={country}
-                          // onChange={handleCountryChange}
                           required
                         >
-                          <option value="" disabled>
-                            Select a year
+                          <option value="">
+                            {/* Select a year */}
+                            {t("Sélectionnez un niveau scolaire")}
                           </option>
-                          <option value="Year 7"> {t("form11")}</option>
-                          <option value="Year 8"> {t("form12")}</option>
-                          <option value="Year 9">{t("form13")}</option>
-                          <option value="Year 10"> {t("form14")}</option>
+                          <option value={t("form11")}> {t("form11")}</option>
+                          <option value={t("form12")}> {t("form12")}</option>
+                          <option value={t("form13")}>{t("form13")}</option>
+                          <option value={t("form14")}> {t("form14")}</option>
                         </select>
                       </div>
                       {/* endof y g */}
@@ -465,19 +467,9 @@ function Heroe() {
                             </label>
                           </div>
                         </div>
-                        {/* <a
-                            href="#"
-                            className="text-sm text-blue-700 hover:underline dark:text-blue-500"
-                          >
-                            Lost Password?
-                          </a> */}
+                       
                       </div>
-                      {/* <button
-                          type="submit"
-                          className="w-full  text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                        >
-                          submit
-                        </button> */}
+                     
                       <div className="flex justify-between">
                         <button
                           className="shadow bg-blue-800 hover:bg-indigo-700 text-white font-bold py-2 p-9 px-4 rounded focus:outline-none focus:shadow-outline"

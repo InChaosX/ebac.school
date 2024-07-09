@@ -85,7 +85,7 @@ function Header() {
     if (
       !fn ||
       !ln ||
-      !dof ||
+      !dof||
       !cn ||
       !ct ||
       !em ||
@@ -201,17 +201,18 @@ function Header() {
                       <div className="flex justify-end p-2">
                         <button
                           type="button"
-                          className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center bg-red-600 dark:hover:text-white"
+                          className="text-white bg-transparent hover:bg-gray-200 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:text-white"
                           onClick={toggleModal}
                         >
                           <svg
-                            className="w-5 h-5"
+                            className="w-6 h-6  rounded-full text-white "
                             fill="FFFFFF"
                             viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
+                            // xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              fillRule="evenodd"
+                              className="text-white"
+                              // fillRule="FFFFF"
                               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                               clipRule="evenodd"
                             ></path>
@@ -284,7 +285,8 @@ function Header() {
                             required
                           >
                             <option value="" disabled>
-                              Select a country
+                              {/* Select a country */}
+                              {t("Sélectionnez un pays")}
                             </option>
                             <option value="Italy">Italy</option>
                             <option value="USA">USA</option>
@@ -309,7 +311,8 @@ function Header() {
                               selected
                               className="text-gray-500"
                             >
-                              Select a city
+                              {/* Select a city */}
+                              {t("Sélectionnez une ville")}
                             </option>
                             {cityOptions.map((city) => (
                               <option
@@ -379,20 +382,20 @@ function Header() {
 
                           {/* Current School Input */}
                           <div>
-                            <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            <label className="block uppercase tracking-wide text-white text-xs font-bold mt-5 pb-2 ">
                               {t("form10")}
                             </label>
                             <input
                               type="text"
                               name="cs"
                               id="text"
-                              className={`font-semibold sm:text-sm rounded-lg  block w-full p-2.5 text-black ${
+                              className={`font-semibold sm:text-sm rounded-lg  block w-full p-2.5 text-black  ${
                                 selectedOption === "Being homeschooled"
                                   ? "bg-gray-500"
                                   : "bg-white"
                               }`}
                               // className="font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                              placeholder="Current School"
+                              placeholder={t("form10")}
                               required={
                                 selectedOption ===
                                 "Enrolled in a physical school"
@@ -408,21 +411,21 @@ function Header() {
                           <label className="text-sm font-medium text-white block mb-2 ">
                             {t("form22")}
                           </label>
+
                           <select
                             name="yg"
-                            id="country"
+                            // id="country"
                             className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                            // value={country}
-                            // onChange={handleCountryChange}
                             required
                           >
-                            <option value="" disabled>
-                              Select a year
+                            <option value="">
+                              {/* Select a year */}
+                              {t("Sélectionnez un niveau scolaire")}
                             </option>
-                            <option value="Year 7"> {t("form11")}</option>
-                            <option value="Year 8"> {t("form12")}</option>
-                            <option value="Year 9">{t("form13")}</option>
-                            <option value="Year 10"> {t("form14")}</option>
+                            <option value={t("form11")}> {t("form11")}</option>
+                            <option value={t("form12")}> {t("form12")}</option>
+                            <option value={t("form13")}>{t("form13")}</option>
+                            <option value={t("form14")}> {t("form14")}</option>
                           </select>
                         </div>
                         {/* endof y g */}
