@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { T, useTranslate } from "@tolgee/react";
 
 function Grid3debac4() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -7,11 +8,13 @@ function Grid3debac4() {
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+   const { t } = useTranslate();
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white  ">
         <h1 className="bg-[#77B5FE] p-3 rounded-full">
-          eBacc for your academic success - Your education, our priority.
+          {/* eBacc for your academic success - Your education, our priority. */}
+          {t("prepare for IGCSE4")}
         </h1>
       </div>
       {/* <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:flex-row-reverse py-36 md:-mt-20 -mt-32"></div> */}
@@ -27,19 +30,16 @@ function Grid3debac4() {
             <div className="space-y-4 ">
               {[
                 {
-                  title: "Registration Conditions",
-                  content:
-                    "To enroll in eBacc, students must provide a school transcript. Additionally, students will need to take the GL Assessment CAT4 test. These requirements ensure a strong educational foundation and comprehensive preparation for IGCSE success.",
+                  title: t("Notre mission éducative4"),
+                  content: t("At eBacc4"),
                 },
                 {
-                  title: "Commitment to Excellence",
-                  content:
-                    "We are committed to providing a top-tier education that exceeds traditional academic expectations. eBacc prepares students to excel not only in exams, but also in their future academic life.",
+                  title: t("Objectifs d'apprentissage4"),
+                  content: t("We aim4"),
                 },
                 {
-                  title: "Security and Privacy",
-                  content:
-                    "The security of students' data is a top priority at eBacc. We adhere to strict privacy standards to ensure a safe and protected learning environment.",
+                  title: t("Why Choose eBacc?4"),
+                  content: t("With eBacc4"),
                 },
               ].map((item, index) => (
                 <div key={index} className="group">

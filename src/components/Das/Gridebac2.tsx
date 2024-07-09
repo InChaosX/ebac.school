@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from "react";
+import { T, useTranslate } from "@tolgee/react";
 
 function Grid3debac2() {
    const [openIndex, setOpenIndex] = useState(0);
@@ -7,13 +8,16 @@ function Grid3debac2() {
    const handleToggle = (index) => {
      setOpenIndex(openIndex === index ? null : index);
    };
+
+     const { t } = useTranslate();
     
   return (
     <section className="bg-white md:px-20 px-8">
       <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white">
         <h1 className="bg-[#77B5FE] p-3 rounded-full  ">
-          Explore our range of IGCSE courses with eBacc - Your path to academic
-          excellence.
+          {/* Explore our range of IGCSE courses with eBacc - Your path to academic
+          excellence. */}
+          {t("prepare for IGCSE2")}
         </h1>
       </div>
       {/* <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:flex-row-reverse py-36 md:-mt-20 -mt-32"></div> */}
@@ -29,19 +33,16 @@ function Grid3debac2() {
             <div className="space-y-4 ">
               {[
                 {
-                  title: "Our IGCSE Courses",
-                  content:
-                    "eBacc offers a variety of courses specifically designed to prepare students for IGCSE exams. Our programs align with international standards and are enriched by our experienced educational team",
+                  title: t("Notre mission éducative2"),
+                  content: t("At eBacc2"),
                 },
                 {
-                  title: "Subjects Covered",
-                  content:
-                    "From Year 7 to Year 11, our courses include mathematics, sciences (biology, physics, chemistry), English, and French. Each subject is taught with a commitment to academic excellence and a deep understanding of concepts.",
+                  title: t("Objectifs d'apprentissage2"),
+                  content: t("We aim2"),
                 },
                 {
-                  title: "Personalization of Learning",
-                  content:
-                    "At eBacc, we recognize the importance of personalized learning to meet the individual needs of students. Our courses offer optimal flexibility to adapt to varying learning paces of each student.",
+                  title: t("Why Choose eBacc?2"),
+                  content: t("With eBacc2"),
                 },
               ].map((item, index) => (
                 <div key={index} className="group">

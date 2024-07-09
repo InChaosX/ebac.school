@@ -28,14 +28,7 @@ function Header() {
   };
   // radio
 
-  // radio validation
-  // const [selectedOption, setSelectedOption] = useState("");
-  // const form = useRef(null);
-
-  // const handleOptionChange = (event) => {
-  //   setSelectedOption(event.target.value);
-  // };
-  // radio validation
+  
 
   // const { t } = useTranslate();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -68,86 +61,7 @@ function Header() {
     setSelectedColor(e.target.value);
   };
 
-  //   ddddddddd
-
-  // const form = useRef(null);
-  // const sendmail = (e: any) => {
-  //   e.preventDefault();
-
-  //   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-  //   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-  //   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
-
-  //   // Custom validation
-  //   const formData = new FormData(form.current!);
-  //   const fn = formData.get("fn");
-  //   const ln = formData.get("ln");
-  //   const dof = formData.get("dof");
-  //   const cn = formData.get("cn");
-  //   const ct = formData.get("ct");
-  //   const em = formData.get("em");
-  //   const eb = formData.get("eb");
-  //   const cs = formData.get("cs");
-  //   const yg = formData.get("yg");
-
-  //   if (!fn && !ln && !dof && !cn && !dof && !ct && !em && !eb && !cs && !yg) {
-  //     // toast.error("Please fill in all fields");
-
-  //     toast.error("please fill all this form");
-
-  //     return;
-  //   }
-
-  //   if (!fn) {
-  //     toast.error(t("fn"));
-  //     return;
-  //   }
-
-  //   if (!ln) {
-  //     toast.error(t("ln"));
-  //     return;
-  //   }
-
-  //   if (!dof) {
-  //     toast.error(t("dof"));
-  //     return;
-  //   }
-
-  //   if (!cn) {
-  //     toast.error(t("cn"));
-  //     return;
-  //   }
-  //   if (!ct) {
-  //     toast.error(t("ct"));
-  //     return;
-  //   }
-  //   if (!em) {
-  //     toast.error("emm");
-  //     return;
-  //   }
-  //   if (!eb) {
-  //     toast.error(t("eb"));
-  //     return;
-  //   }
-  //   if (!cs) {
-  //     toast.error(t("cs"));
-  //     return;
-  //   }
-  //   if (!yg) {
-  //     toast.error(t("yg"));
-  //     return;
-  //   }
-
-  //   emailjs.sendForm(serviceId, templateId, form.current ?? "", publicKey).then(
-  //     () => {
-  //       toast.success(t("succes"));
-  //     },
-  //     () => {
-  //       toast.error(t("error"));
-  //     }
-  //   );
-  //   e.target.reset();
-  // };
+  
   const form = useRef(null);
   const sendmail = (e) => {
     e.preventDefault();

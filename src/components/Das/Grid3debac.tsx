@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { T, useTranslate } from "@tolgee/react";
 
 
 function Grid3debac() {
+   const { t } = useTranslate();
      const [openIndex, setOpenIndex] = useState(0);
 
      const handleToggle = (index) => {
@@ -19,8 +21,9 @@ function Grid3debac() {
         className="flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white "
       >
         <h1 className="bg-[#77B5FE] p-3 rounded-full">
-          Prepare for IGCSE with  eBacc - Educational excellence beyond
-          traditional courses.
+          {/* Prepare for IGCSE with  eBacc - Educational excellence beyond
+          traditional courses. */}
+          {t("prepare for IGCSE")}
         </h1>
       </div>
       {/* border-4 border-white bg-[#29328f] */}
@@ -38,19 +41,16 @@ function Grid3debac() {
             <div className="space-y-4 " data-aos="fade-up-right">
               {[
                 {
-                  title: "Our Educational Mission",
-                  content:
-                    "At eBacc, our mission is to enhance students' academic learning by complementing their initial school curriculum. We prepare students to excel in IGCSE exams through a rigorous and well-structured program.",
+                  title: t("Notre mission éducative"),
+                  content: t("At eBacc"),
                 },
                 {
-                  title: "Learning Objectives",
-                  content:
-                    "We aim to provide thorough training in key subjects such as mathematics, sciences, English, and more, while strengthening French skills for comprehensive IGCSE preparation.",
+                  title: t("Objectifs d'apprentissage"),
+                  content: t("We aim"),
                 },
                 {
-                  title: "Why Choose eBacc?",
-                  content:
-                    "With eBacc, students benefit from quality education supplemented by live sessions with our qualified instructors, ensuring thorough and personalized preparation for IGCSE exams.",
+                  title: t("Why Choose eBacc?"),
+                  content: t("With eBacc"),
                 },
               ].map((item, index) => (
                 <div key={index} className="group">
