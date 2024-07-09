@@ -146,7 +146,7 @@ function Heroe() {
   };
 
   return (
-    <div className="bg-[#f5f6fa] mt-24">
+    <div className="bg-[#f5f6fa] mt-24 ">
       <div className="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row items-start">
         {/* <!--Left Col--> */}
         <div className="flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
@@ -158,38 +158,37 @@ function Heroe() {
           >
             {/* Studying Online with eBacc - Your Path to English Baccalaureate
             Success */}
-            {/* {t("Étudier en ligne avec eBacc")} */}
-            <span className="text-[#cc2132]">
-              Studying Online with eBacc
-            </span>{" "}
-            <span className="text-[#061770]">
-              - Your Path to English Baccalaureate
-            </span>
+            <span className="text-[#cc2132]">{t("studying")}</span>{" "}
+            <span className="text-[#061770]"> {t("path")}</span>
           </h1>
-          <p
-            data-aos="fade-up-right"
-            className=" md:text-2xl text-1xl text-center md:text-left md:p-0 p-7 leading-7 mb-8 font-thin"
-          >
-            {/* Join eBacc today and unlock your full academic potential with expert
+          <div>
+            <p
+              data-aos="fade-up-right"
+              className=" md:text-2xl text-1xl text-center md:text-left md:p-0 p-7 leading-7 mb-8 font-thin"
+            >
+              {/* Join eBacc today and unlock your full academic potential with expert
             guidance and personalized learning. As a dedicated English
             Baccalaureate platform, we prepare you for IGCSE success. */}
-            {t("heroo")}
-          </p>
+              {t("heroo")}
+            </p>
+          </div>
+
           <div
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-delay="700"
+            // data-aos="fade-up"
+            // data-aos-once="true"
+            // data-aos-delay="700"
             className="w-full md:flex items-center justify-center lg:justify-start md:space-x-5 cursor-pointer"
           >
             {/* lg:mx-0 bg-yellow-500 text-white text-xl font-bold rounded-full py-4
             px-9 btn-zoom */}
             <button
               onClick={toggleModal}
-              className="lg:mx-0 bg-[#c71e2f] text-white text-xl font-bold rounded-full py-4  cursor-pointer px-20 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+              className="lg:mx-0 bg-[#c71e2f] mb-10  text-white text-xl font-bold rounded-full py-6 cursor-pointer px-20 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
             >
               {/* Join now ! */}
               {t("Rejoignez-nous maintenant")}
             </button>
+
             {isModalOpen && (
               <div
                 id="authentication-modal"
@@ -224,13 +223,13 @@ function Heroe() {
                       onSubmit={sendmail}
                     >
                       <h3 className=" flex justify-center items-center mb-10 font-bold bg-[#061770] py-4 rounded-2xl cursor-pointer hover:text-[#061770] hover:bg-slate-200 text-xl  text-white">
-                        Pre-registration Form
+                        {t("form")}
                       </h3>
 
                       <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Student's First Name
+                            {t("form1")}
                           </label>
                           <input
                             className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
@@ -244,7 +243,7 @@ function Heroe() {
                         </div>
                         <div className="w-full md:w-1/2 px-3">
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Student's Last Name
+                            {t("form2")}
                           </label>
                           <input
                             className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 mr-9 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black "
@@ -260,7 +259,7 @@ function Heroe() {
 
                       <div>
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          Date of Birth
+                          {t("form3")}
                         </label>
                         <input
                           type="date"
@@ -272,7 +271,7 @@ function Heroe() {
 
                       <div>
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          Country
+                          {t("form4")}
                         </label>
                         <select
                           name="cn"
@@ -292,7 +291,7 @@ function Heroe() {
 
                       <div>
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          City
+                          {t("form5")}
                         </label>
                         <select
                           name="ct"
@@ -324,7 +323,7 @@ function Heroe() {
 
                       <div>
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          Email
+                          {t("form6")}
                         </label>
                         <input
                           type="email"
@@ -339,7 +338,7 @@ function Heroe() {
                       <div>
                         <div>
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Are You Currently
+                            {t("form7")}
                           </label>
                           <div className="space-y-4">
                             <label className="flex items-center">
@@ -354,7 +353,7 @@ function Heroe() {
                                 className="form-radio text-black-600"
                               />
                               <span className="ml-2 font-semibold text-white">
-                                Homeschooled
+                                {t("form8")}
                               </span>
                             </label>
                             <label className="flex items-center">
@@ -370,7 +369,7 @@ function Heroe() {
                                 className="form-radio text-3xl text-red-600"
                               />
                               <span className="ml-2 font-semibold text-white">
-                                Enrolled in a physical school
+                                {t("form9")}
                               </span>
                             </label>
                           </div>
@@ -379,13 +378,13 @@ function Heroe() {
                         {/* Current School Input */}
                         <div>
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Current School
+                            {t("form10")}
                           </label>
                           <input
                             type="text"
                             name="cs"
                             id="text"
-                            className={`font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black ${
+                            className={`font-semibold sm:text-sm rounded-lg  block w-full p-2.5 text-black ${
                               selectedOption === "Being homeschooled"
                                 ? "bg-gray-500"
                                 : "bg-white"
@@ -404,7 +403,7 @@ function Heroe() {
 
                       <div>
                         <label className="text-sm font-medium text-white block mb-2 ">
-                          Year Group / Grade
+                          {t("form22")}
                         </label>
                         <select
                           name="yg"
@@ -417,10 +416,10 @@ function Heroe() {
                           <option value="" disabled>
                             Select a year
                           </option>
-                          <option value="Year 7">Year 7</option>
-                          <option value="Year 8">Year 8</option>
-                          <option value="Year 9">Year 9</option>
-                          <option value="Year 10">Year 10</option>
+                          <option value="Year 7"> {t("form11")}</option>
+                          <option value="Year 8"> {t("form12")}</option>
+                          <option value="Year 9">{t("form13")}</option>
+                          <option value="Year 10"> {t("form14")}</option>
                         </select>
                       </div>
                       {/* endof y g */}
@@ -438,7 +437,7 @@ function Heroe() {
                           </div>
                           <div className="text-sm ml-3">
                             <label className="font-medium text-gray-900 dark:text-gray-300">
-                              I agree to the terms and conditions of EBacc.
+                              {t("form15")}
                             </label>
                           </div>
                         </div>
@@ -462,8 +461,7 @@ function Heroe() {
                           </div>
                           <div className="text-sm ml-3">
                             <label className="font-medium text-gray-900 dark:text-gray-300">
-                              I agree to the privacy policy and understand how
-                              my data will be used.
+                              {t("form16")}
                             </label>
                           </div>
                         </div>
@@ -486,13 +484,15 @@ function Heroe() {
                           type="submit"
                           value="Send ➤"
                         >
-                          Submit
+                          {t("Envoyer")}
                         </button>
 
-                        <input
+                        <button
                           className="shadow bg-blue-800 hover:bg-indigo-700 text-white font-bold py-2 p-10 px-4 rounded focus:outline-none focus:shadow-outline"
                           type="reset"
-                        />
+                        >
+                          {t("Réinitialiser")}
+                        </button>
                       </div>
                     </form>
                     <ToastContainer

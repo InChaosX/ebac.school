@@ -225,13 +225,13 @@ function Header() {
                         onSubmit={sendmail}
                       >
                         <h3 className=" flex justify-center items-center mb-10 font-bold bg-[#061770] py-4 rounded-2xl cursor-pointer hover:text-[#061770] hover:bg-slate-200 text-xl  text-white">
-                          Pre-registration Form
+                          {t("form")}
                         </h3>
 
                         <div className="flex flex-wrap -mx-3 mb-6">
                           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                              Student's First Name
+                              {t("form1")}
                             </label>
                             <input
                               className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
@@ -245,7 +245,7 @@ function Header() {
                           </div>
                           <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                              Student's Last Name
+                              {t("form2")}
                             </label>
                             <input
                               className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 mr-9 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black "
@@ -261,21 +261,19 @@ function Header() {
 
                         <div>
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Date of Birth
+                            {t("form3")}
                           </label>
                           <input
                             type="date"
                             name="dof"
                             className=" font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
                             required
-                            
-                            
                           />
                         </div>
 
                         <div>
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Country
+                            {t("form4")}
                           </label>
                           <select
                             name="cn"
@@ -295,7 +293,7 @@ function Header() {
 
                         <div>
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            City
+                            {t("form5")}
                           </label>
                           <select
                             name="ct"
@@ -327,7 +325,7 @@ function Header() {
 
                         <div>
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                            Email
+                            {t("form6")}
                           </label>
                           <input
                             type="email"
@@ -342,7 +340,7 @@ function Header() {
                         <div>
                           <div>
                             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                              Are You Currently
+                              {t("form7")}
                             </label>
                             <div className="space-y-4">
                               <label className="flex items-center">
@@ -357,7 +355,7 @@ function Header() {
                                   className="form-radio text-black-600"
                                 />
                                 <span className="ml-2 font-semibold text-white">
-                                  Homeschooled
+                                  {t("form8")}
                                 </span>
                               </label>
                               <label className="flex items-center">
@@ -373,7 +371,7 @@ function Header() {
                                   className="form-radio text-3xl text-red-600"
                                 />
                                 <span className="ml-2 font-semibold text-white">
-                                  Enrolled in a physical school
+                                  {t("form9")}
                                 </span>
                               </label>
                             </div>
@@ -382,7 +380,7 @@ function Header() {
                           {/* Current School Input */}
                           <div>
                             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                              Current School
+                              {t("form10")}
                             </label>
                             <input
                               type="text"
@@ -408,7 +406,7 @@ function Header() {
 
                         <div>
                           <label className="text-sm font-medium text-white block mb-2 ">
-                            Year Group / Grade
+                            {t("form22")}
                           </label>
                           <select
                             name="yg"
@@ -421,10 +419,10 @@ function Header() {
                             <option value="" disabled>
                               Select a year
                             </option>
-                            <option value="Year 7">Year 7</option>
-                            <option value="Year 8">Year 8</option>
-                            <option value="Year 9">Year 9</option>
-                            <option value="Year 10">Year 10</option>
+                            <option value="Year 7"> {t("form11")}</option>
+                            <option value="Year 8"> {t("form12")}</option>
+                            <option value="Year 9">{t("form13")}</option>
+                            <option value="Year 10"> {t("form14")}</option>
                           </select>
                         </div>
                         {/* endof y g */}
@@ -442,7 +440,7 @@ function Header() {
                             </div>
                             <div className="text-sm ml-3">
                               <label className="font-medium text-gray-900 dark:text-gray-300">
-                                I agree to the terms and conditions of EBacc.
+                                {t("form15")}
                               </label>
                             </div>
                           </div>
@@ -466,8 +464,7 @@ function Header() {
                             </div>
                             <div className="text-sm ml-3">
                               <label className="font-medium text-gray-900 dark:text-gray-300">
-                                I agree to the privacy policy and understand how
-                                my data will be used.
+                                {t("form16")}
                               </label>
                             </div>
                           </div>
@@ -490,13 +487,15 @@ function Header() {
                             type="submit"
                             value="Send ➤"
                           >
-                            Submit
+                            {t("Envoyer")}
                           </button>
 
-                          <input
+                          <button
                             className="shadow bg-blue-800 hover:bg-indigo-700 text-white font-bold py-2 p-10 px-4 rounded focus:outline-none focus:shadow-outline"
                             type="reset"
-                          />
+                          >
+                            {t("Réinitialiser")}
+                          </button>
                         </div>
                       </form>
                       <ToastContainer

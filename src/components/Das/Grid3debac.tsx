@@ -31,7 +31,7 @@ function Grid3debac() {
         <img
           alt=""
           src="/clear-objective.jpg"
-          className="h-56 w-full object-cover sm:h-full block sm:hidden  border-4 border-[#29328f]"
+          className="h-56 w-full object-cover sm:h-full block sm:hidden "
           data-aos="fade-right"
           data-aos-duration="3000"
         />
@@ -113,7 +113,7 @@ function Grid3debac() {
         <img
           alt=""
           src="/clear-objective.jpg"
-          className="h-56 w-full object-cover sm:h-full hidden sm:block  border-4 border-[#29328f]"
+          className="h-56 w-full object-cover sm:h-full hidden sm:block  "
         />
       </div>
     </section>

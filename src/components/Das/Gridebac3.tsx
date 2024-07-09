@@ -22,7 +22,7 @@ function Grid3debac3() {
         <img
           alt=""
           src="/meet.jpg"
-          className="h-56 w-full object-cover sm:h-full block sm:hidden  border-4 border-[#29328f]"
+          className="h-56 w-full object-cover sm:h-full block sm:hidden "
         />
         <div className="p-1 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -99,7 +99,7 @@ function Grid3debac3() {
         <img
           alt=""
           src="/meet.jpg"
-          className="h-56 w-full object-cover sm:h-full hidden sm:block  border-4 border-[#29328f]"
+          className="h-56 w-full object-cover sm:h-full hidden sm:block  "
         />
       </div>
     </section>

@@ -5,6 +5,12 @@
 "Inscrivez-vous maintenant" : "Enroll Now",
 "Rejoignez-nous maintenant": "Join now ! ",
 "Étudier en ligne avec eBacc ": "Studying Online with eBacc - Your Path to English Baccalaureate",
+
+"studying": "Studying Online with eBacc",
+"path": "- Your Path to English Baccalaureate",
+
+
+
 "heroo": "Join eBacc today and unlock your full academic potential with expert guidance and personalized learning. As a dedicated English Baccalaureate platform, we prepare you for IGCSE success.",
 
 "prepare for IGCSE" : "Prepare for IGCSE with  eBacc - Educational excellence beyond traditional courses.",
@@ -43,74 +49,42 @@
   "With eBacc4":"The security of students' data is a top priority at eBacc. We adhere to strict privacy standards to ensure a safe and protected learning environment.",
 
 
-  "Who are we ?" : "Who are we ?",
-
-   "bthero": "  Register for NCUK Casablanca",
-
-  "hero": " Start your education in Morocco and finish it in the UK",
-
-   "hero_part1": "Start your education in Morocco",
-  "hero_part2": "and finish it in the UK",
-
-  "partner1Title":"NCUK University Partners",
-  "partner2text":"NCUK is unique in UK higher education. We are a consortium of leading universities dedicated to giving international students guaranteed access to universities and helping you succeed when you get there. The accredited centre in Morocco is located in Casablanca.",
- 
-
-  "2partner1Title":"NCUK University Partners",
-  "2partner2text":"Progress to one of 45+ world-class universities in the UK, USA, Canada, Australia, and New Zealand including:",
-
- 
-  "3partner1Title":"How Many Gratuated ?",
-  "3partner2text":"Moroccan student figures in the UK have increased by over 26% since 2014 to over 700 students — the undergraduate (Bachelor) figure is almost a 50% increase!",
- 
- 
-   "c1": "Through the years...",
-    "c2": "Accredited in May 2019",
-     "c3": " Started in September 2019: International Foundation Year (IFY)",
-      "c4": " 2019-20: Graduated 5 Students (IFY Business andEngineering)",
-       "c5": " 2020-21: Graduated 8 Students (IFY Business and Science)",
-        "c6": " 2021-22: Graduated 6 Students (Business and Engineering)",
-         "c7": " 2022-23: Graduated 14 Students (Business and Engineering)",
-          "c8": " 2023-24 : To Graduate 7 Students (Business and Engineering)",
-
-           
-   
-"4partner1Title":"Requirements for International Foundation Year:",
-  "4partner2text":"Students will usually be at least 17 years of age at the start of IFY qualification (September 2021) but there are lots of options for students who are 16 years of age.",
-   
-     "r1": "English of at least 5.0 IELTS (NCUK testing system available for students)",
-    "r2": "Diplome du Baccalaureat (MA, FR)",
-     "r3": "IGCSE (UK)",
-      "r4": " US High School Diploma (US)",
-
-  
+  "contact": "Get in Touch with Us - Join eBacc Today",
+   "Contactez-nous !" : "Contact Us !" ,
 
 
 
+  "fill":"Remplissez le formulaire ci-dessous pour nous envoyer un message.",
 
-      "contact":"Contact Us",
-      "con_part1": "start your bright",
-      "con_part2": "future",
-      "con_part3": "here...",
+  "pn": "Parent's Full Name",
+  "ad":"Email Address",
+  "nt":"Phone Number ",
+  "sb":"Subject",
+  "ms":"Type your message here...",
+
+"Envoyer":"Send",
+"Réinitialiser":"Rest",
 
 
 
-      "toastMessage": "Please fill in all fields",
-      "fnom": "Please Enter Your Full Name",
-     "email" : "Please enter your email",
-      "phone" : "Please enter your phone number",
-      "message" : "When did you get your certificate ?",
-
-      "succes": "Thank you , Your submission has been received 🎉",
-      "error" : "Something wrong..check your Internet!",
-      "Nom Complete": "Full Name",
-      "Email": "Email",
-      "Numero De Telephone": "Phone Number",
-    
-       "when":" When did you get your baccalaureat?",
-      "ENVOYER VOTRE CANDIDATURE":"Submit"
-     
-
+"form":"Pre-registration Form",
+"form1":"STUDENT'S FIRST NAME",
+"form2":"STUDENT'S LAST NAME",
+"form3":"DATE OF BIRTH",
+"form4":"COUNTRY",
+"form5":"CITY",
+"form6":"EMAIL",
+"form7":"ARE YOU CURRENTLY",
+"form8":"Homeschooled",
+"form9":"Enrolled in a physical school",
+"form10":"CURRENT SCHOOL",
+"form22": "Year Group / Grade",
+"form11":"Year 7 ( Première année collège )",
+"form12":"Year 8 ( Deuxième année collège )",
+"form13":"Year 9 ( Troisième année collège )",
+"form14":"Year 10 ( Tronc commun )",
+"form15":"J'accepte les conditions générales d'EBacc.",
+"form16":"J'accepte la politique de confidentialité et comprends comment mes données seront utilisées."
   
 
 }
