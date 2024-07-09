@@ -474,7 +474,7 @@ function Header() {
                               type="text"
                               name="cs"
                               id="text"
-                              className={`font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black ${
+                              className={`font-semibold sm:text-sm rounded-lg  block w-full p-2.5 text-black ${
                                 selectedOption === "Being homeschooled"
                                   ? "bg-gray-500"
                                   : "bg-white"
