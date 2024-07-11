@@ -79,12 +79,12 @@
 "form9":"Enrolled in a physical school",
 "form10":"CURRENT SCHOOL",
 "form22": "Year Group / Grade",
-"form11":"Year 7 ( Première année collège )",
-"form12":"Year 8 ( Deuxième année collège )",
-"form13":"Year 9 ( Troisième année collège )",
-"form14":"Year 10 ( Tronc commun )",
-"form15":"J'accepte les conditions générales d'EBacc.",
-"form16":"J'accepte la politique de confidentialité et comprends comment mes données seront utilisées.",
+"form11":"Year 7 ",
+"form12":"Year 8 ",
+"form13":"Year 9 ",
+"form14":"Year 10 ",
+"form15":"I agree to the terms and conditions of EBacc.",
+"form16":"I agree to the privacy policy and understand how my data will be used.",
 "Sélectionnez un pays": "Select a country",
 "Sélectionnez une ville": "Select a city",
 "Sélectionnez un niveau scolaire": "Select a year",
@@ -99,13 +99,76 @@
 
 
 
-"Please fill in all required fields":"about",
-"First name is requireds":"amazing",
-"Last name is required":"hekoo",
-"Date of birth is required":"bbbbb",
-"Country is required":"xxxxxxxxxxx",
-"City is required":"sssssssssssssssssss",
-"Email is required":"aaaaaaaaaaaaaaaaaaaaaa"
+"date_placeholder":"MM/DD/YYYY",
+
+
+
+
+
+
+  "countries": {
+    "Argentina": "Argentina",
+    "Australia": "Australia",
+    "Brazil": "Brazil",
+    "Canada": "Canada",
+    "China": "China",
+    "Egypt": "Egypt",
+    "Finland": "Finland",
+    "France": "France",
+    "Germany": "Germany",
+    "India": "India",
+    "Italy": "Italy",
+    "Japan": "Japan",
+    "Mexico": "Mexico",
+    "Morocco": "Morocco",
+    "Netherlands": "Netherlands",
+    "New Zealand": "New Zealand",
+    "Russia": "Russia",
+    "South Africa": "South Africa",
+    "South Korea": "South Korea",
+    "Spain": "Spain",
+    "Singapore": "Singapore",
+    "Sweden": "Sweden",
+    "Turkey": "Turkey",
+    "United Kingdom": "United Kingdom",
+    "United States": "United States"
+  },
+  "cities": {
+    "Argentina": ["Buenos Aires", "Córdoba", "Rosario", "Mendoza", "La Plata", "San Miguel de Tucumán", "Mar del Plata", "Salta"],
+    "Australia": ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide", "Gold Coast", "Canberra", "Hobart"],
+    "Brazil": ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Fortaleza", "Belo Horizonte", "Manaus", "Curitiba"],
+    "Canada": ["Toronto", "Vancouver", "Montreal", "Calgary", "Edmonton", "Ottawa", "Winnipeg", "Quebec City"],
+    "China": ["Beijing", "Shanghai", "Guangzhou", "Shenzhen", "Chengdu", "Chongqing", "Tianjin", "Wuhan"],
+    "Egypt": ["Cairo", "Alexandria", "Giza", "Shubra El Kheima", "Port Said", "Suez", "Luxor", "Aswan"],
+    "Finland": ["Helsinki", "Espoo", "Tampere", "Vantaa", "Oulu", "Turku", "Jyväskylä", "Lahti"],
+    "France": ["Paris", "Marseille", "Lyon", "Toulouse", "Nice", "Nantes", "Strasbourg", "Montpellier"],
+    "Germany": ["Berlin", "Munich", "Frankfurt", "Hamburg", "Cologne", "Stuttgart", "Düsseldorf", "Dresden"],
+    "India": ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata", "Hyderabad", "Pune", "Ahmedabad"],
+    "Italy": ["Rome", "Milan", "Naples", "Turin", "Palermo", "Genoa", "Bologna", "Florence"],
+    "Japan": ["Tokyo", "Osaka", "Nagoya", "Yokohama", "Kyoto", "Fukuoka", "Sapporo", "Kobe"],
+    "Mexico": ["Mexico City", "Guadalajara", "Monterrey", "Puebla", "Tijuana", "León", "Ciudad Juárez", "Cancún"],
+    "Morocco": ["Casablanca", "Rabat", "Marrakech", "Fes", "Tangier", "Agadir", "Meknes", "Oujda"],
+    "Netherlands": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven", "Tilburg", "Groningen", "Almere"],
+    "New Zealand": ["Auckland", "Wellington", "Christchurch", "Hamilton", "Tauranga", "Dunedin", "Palmerston North", "Napier"],
+    "Russia": ["Moscow", "Saint Petersburg", "Novosibirsk", "Yekaterinburg", "Nizhny Novgorod", "Kazan", "Chelyabinsk", "Samara"],
+    "South Africa": ["Johannesburg", "Cape Town", "Durban", "Pretoria", "Port Elizabeth", "Bloemfontein", "East London", "Polokwane"],
+    "South Korea": ["Seoul", "Busan", "Incheon", "Daegu", "Daejeon", "Gwangju", "Suwon", "Ulsan"],
+    "Spain": ["Madrid", "Barcelona", "Valencia", "Seville", "Zaragoza", "Málaga", "Murcia", "Palma"],
+    "Singapore": ["Singapore"],
+    "Sweden": ["Stockholm", "Gothenburg", "Malmö", "Uppsala", "Västerås", "Örebro", "Linköping", "Helsingborg"],
+    "Turkey": ["Istanbul", "Ankara", "Izmir", "Bursa", "Adana", "Gaziantep", "Konya", "Antalya"],
+    "United Kingdom": ["London", "Manchester", "Birmingham", "Glasgow", "Liverpool", "Edinburgh", "Leeds", "Bristol"],
+    "United States": ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia", "San Antonio", "San Diego"]
+  }
+
+
+
+
+
+
+
+
+
   
 
 }

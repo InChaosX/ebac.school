@@ -97,13 +97,71 @@
 "Current School":"Current School" ,
 
 
-"Please fill in all required fields":"about",
-"First name is requireds":"amazing",
-"Last name is required":"hekoo",
-"Date of birth is required":"bbbbb",
-"Country is required":"xxxxxxxxxxx",
-"City is required":"sssssssssssssssssss",
-"Email is required":"aaaaaaaaaaaaaaaaaaaaaa"
+"date_placeholder":"MM/JJ/AAAA",
+
+
+
+
+
+  "countries": {
+    "Argentina": "Argentine",
+    "Australia": "Australie",
+    "Brazil": "Brésil",
+    "Canada": "Canada",
+    "China": "Chine",
+    "Egypt": "Égypte",
+    "Finland": "Finlande",
+    "France": "France",
+    "Germany": "Allemagne",
+    "India": "Inde",
+    "Italy": "Italie",
+    "Japan": "Japon",
+    "Mexico": "Mexique",
+    "Morocco": "Maroc",
+    "Netherlands": "Pays-Bas",
+    "New Zealand": "Nouvelle-Zélande",
+    "Russia": "Russie",
+    "South Africa": "Afrique du Sud",
+    "South Korea": "Corée du Sud",
+    "Spain": "Espagne",
+    "Singapore": "Singapour",
+    "Sweden": "Suède",
+    "Turkey": "Turquie",
+    "United Kingdom": "Royaume-Uni",
+    "United States": "États-Unis"
+  },
+  "cities": {
+    "Argentina": ["Buenos Aires", "Córdoba", "Rosario", "Mendoza", "La Plata", "San Miguel de Tucumán", "Mar del Plata", "Salta"],
+    "Australia": ["Sydney", "Melbourne", "Brisbane", "Perth", "Adélaïde", "Gold Coast", "Canberra", "Hobart"],
+    "Brazil": ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Fortaleza", "Belo Horizonte", "Manaus", "Curitiba"],
+    "Canada": ["Toronto", "Vancouver", "Montréal", "Calgary", "Edmonton", "Ottawa", "Winnipeg", "Québec"],
+    "China": ["Pékin", "Shanghai", "Canton", "Shenzhen", "Chengdu", "Chongqing", "Tianjin", "Wuhan"],
+    "Egypt": ["Le Caire", "Alexandrie", "Gizeh", "Shubra El Kheima", "Port-Saïd", "Suez", "Louxor", "Assouan"],
+    "Finland": ["Helsinki", "Espoo", "Tampere", "Vantaa", "Oulu", "Turku", "Jyväskylä", "Lahti"],
+    "France": ["Paris", "Marseille", "Lyon", "Toulouse", "Nice", "Nantes", "Strasbourg", "Montpellier"],
+    "Germany": ["Berlin", "Munich", "Francfort", "Hambourg", "Cologne", "Stuttgart", "Düsseldorf", "Dresde"],
+    "India": ["Mumbai", "Delhi", "Bangalore", "Chennai", "Calcutta", "Hyderabad", "Pune", "Ahmedabad"],
+    "Italy": ["Rome", "Milan", "Naples", "Turin", "Palerme", "Gênes", "Bologne", "Florence"],
+    "Japan": ["Tokyo", "Osaka", "Nagoya", "Yokohama", "Kyoto", "Fukuoka", "Sapporo", "Kobe"],
+    "Mexico": ["Mexico", "Guadalajara", "Monterrey", "Puebla", "Tijuana", "León", "Ciudad Juárez", "Cancún"],
+    "Morocco": ["Casablanca", "Rabat", "Marrakech", "Fès", "Tanger", "Agadir", "Meknès", "Oujda"],
+    "Netherlands": ["Amsterdam", "Rotterdam", "La Haye", "Utrecht", "Eindhoven", "Tilburg", "Groningue", "Almere"],
+    "New Zealand": ["Auckland", "Wellington", "Christchurch", "Hamilton", "Tauranga", "Dunedin", "Palmerston North", "Napier"],
+    "Russia": ["Moscou", "Saint-Pétersbourg", "Novossibirsk", "Iekaterinbourg", "Nijni Novgorod", "Kazan", "Tcheliabinsk", "Samara"],
+    "South Africa": ["Johannesbourg", "Le Cap", "Durban", "Pretoria", "Port Elizabeth", "Bloemfontein", "East London", "Polokwane"],
+    "South Korea": ["Séoul", "Busan", "Incheon", "Daegu", "Daejeon", "Gwangju", "Suwon", "Ulsan"],
+    "Spain": ["Madrid", "Barcelone", "Valence", "Séville", "Saragosse", "Málaga", "Murcie", "Palma"],
+    "Singapore": ["Singapour"],
+    "Sweden": ["Stockholm", "Göteborg", "Malmö", "Uppsala", "Västerås", "Örebro", "Linköping", "Helsingborg"],
+    "Turkey": ["Istanbul", "Ankara", "Izmir", "Bursa", "Adana", "Gaziantep", "Konya", "Antalya"],
+    "United Kingdom": ["Londres", "Manchester", "Birmingham", "Glasgow", "Liverpool", "Édimbourg", "Leeds", "Bristol"],
+    "United States": ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphie", "San Antonio", "San Diego"]
+  }
+
+
+
+
+
 
 
 

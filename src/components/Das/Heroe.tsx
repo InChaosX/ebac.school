@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 // import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { T, useTranslate } from "@tolgee/react";
+import { useTranslate } from "@tolgee/react";
 
 // import { LangSelector } from "../LangSelector";
 // import { Link } from "react-scroll";
@@ -21,8 +21,7 @@ function Heroe() {
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
-  // radio
-  // const { t } = useTranslate();
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedColor, setSelectedColor] = useState("");
 
@@ -35,19 +34,259 @@ function Heroe() {
     }
   };
 
-  const [country, setCountry] = useState("");
-  const [cityOptions, setCityOptions] = useState([]);
+   const [selectedCountry, setSelectedCountry] = useState("");
+   const [cityOptions, setCityOptions] = useState([]);
 
-  const countries = {
-    Italy: ["Rome", "Milan", "Naples", "Turin"],
-    USA: ["New York", "Los Angeles", "Chicago", "Houston"],
-  };
+   const handleCountryChange = (e) => {
+     const selectedCountry = e.target.value;
+     setSelectedCountry(selectedCountry);
+     setCityOptions(countryCities[selectedCountry] || []);
+   };
 
-  const handleCountryChange = (e) => {
-    const selectedCountry = e.target.value;
-    setCountry(selectedCountry);
-    setCityOptions(countries[selectedCountry] || []);
-  };
+   const countryCities = {
+     Argentina: [
+       "Buenos Aires",
+       "Córdoba",
+       "Rosario",
+       "Mendoza",
+       "La Plata",
+       "San Miguel de Tucumán",
+       "Mar del Plata",
+       "Salta",
+     ],
+     Australia: [
+       "Sydney",
+       "Melbourne",
+       "Brisbane",
+       "Perth",
+       "Adelaide",
+       "Gold Coast",
+       "Canberra",
+       "Hobart",
+     ],
+     Brazil: [
+       "São Paulo",
+       "Rio de Janeiro",
+       "Brasília",
+       "Salvador",
+       "Fortaleza",
+       "Belo Horizonte",
+       "Manaus",
+       "Curitiba",
+     ],
+     Canada: [
+       "Toronto",
+       "Vancouver",
+       "Montreal",
+       "Calgary",
+       "Edmonton",
+       "Ottawa",
+       "Winnipeg",
+       "Quebec City",
+     ],
+     China: [
+       "Beijing",
+       "Shanghai",
+       "Guangzhou",
+       "Shenzhen",
+       "Chengdu",
+       "Chongqing",
+       "Tianjin",
+       "Wuhan",
+     ],
+     Egypt: [
+       "Cairo",
+       "Alexandria",
+       "Giza",
+       "Shubra El Kheima",
+       "Port Said",
+       "Suez",
+       "Luxor",
+       "Aswan",
+     ],
+     Finland: [
+       "Helsinki",
+       "Espoo",
+       "Tampere",
+       "Vantaa",
+       "Oulu",
+       "Turku",
+       "Jyväskylä",
+       "Lahti",
+     ],
+     France: [
+       "Paris",
+       "Marseille",
+       "Lyon",
+       "Toulouse",
+       "Nice",
+       "Nantes",
+       "Strasbourg",
+       "Montpellier",
+     ],
+     Germany: [
+       "Berlin",
+       "Munich",
+       "Frankfurt",
+       "Hamburg",
+       "Cologne",
+       "Stuttgart",
+       "Düsseldorf",
+       "Dresden",
+     ],
+     India: [
+       "Mumbai",
+       "Delhi",
+       "Bangalore",
+       "Chennai",
+       "Kolkata",
+       "Hyderabad",
+       "Pune",
+       "Ahmedabad",
+     ],
+     Italy: [
+       "Rome",
+       "Milan",
+       "Naples",
+       "Turin",
+       "Palermo",
+       "Genoa",
+       "Bologna",
+       "Florence",
+     ],
+     Japan: [
+       "Tokyo",
+       "Osaka",
+       "Nagoya",
+       "Yokohama",
+       "Kyoto",
+       "Fukuoka",
+       "Sapporo",
+       "Kobe",
+     ],
+     Mexico: [
+       "Mexico City",
+       "Guadalajara",
+       "Monterrey",
+       "Puebla",
+       "Tijuana",
+       "León",
+       "Ciudad Juárez",
+       "Cancún",
+     ],
+     Morocco: [
+       "Casablanca",
+       "Rabat",
+       "Marrakech",
+       "Fes",
+       "Tangier",
+       "Agadir",
+       "Meknes",
+       "Oujda",
+     ],
+     Netherlands: [
+       "Amsterdam",
+       "Rotterdam",
+       "The Hague",
+       "Utrecht",
+       "Eindhoven",
+       "Tilburg",
+       "Groningen",
+       "Almere",
+     ],
+     "New Zealand": [
+       "Auckland",
+       "Wellington",
+       "Christchurch",
+       "Hamilton",
+       "Tauranga",
+       "Dunedin",
+       "Palmerston North",
+       "Napier",
+     ],
+     Russia: [
+       "Moscow",
+       "Saint Petersburg",
+       "Novosibirsk",
+       "Yekaterinburg",
+       "Nizhny Novgorod",
+       "Kazan",
+       "Chelyabinsk",
+       "Samara",
+     ],
+     "South Africa": [
+       "Johannesburg",
+       "Cape Town",
+       "Durban",
+       "Pretoria",
+       "Port Elizabeth",
+       "Bloemfontein",
+       "East London",
+       "Polokwane",
+     ],
+     "South Korea": [
+       "Seoul",
+       "Busan",
+       "Incheon",
+       "Daegu",
+       "Daejeon",
+       "Gwangju",
+       "Suwon",
+       "Ulsan",
+     ],
+     Spain: [
+       "Madrid",
+       "Barcelona",
+       "Valencia",
+       "Seville",
+       "Zaragoza",
+       "Málaga",
+       "Murcia",
+       "Palma",
+     ],
+     Singapore: ["Singapore"],
+     Sweden: [
+       "Stockholm",
+       "Gothenburg",
+       "Malmö",
+       "Uppsala",
+       "Västerås",
+       "Örebro",
+       "Linköping",
+       "Helsingborg",
+     ],
+     Turkey: [
+       "Istanbul",
+       "Ankara",
+       "Izmir",
+       "Bursa",
+       "Adana",
+       "Gaziantep",
+       "Konya",
+       "Antalya",
+     ],
+     "United Kingdom": [
+       "London",
+       "Manchester",
+       "Birmingham",
+       "Glasgow",
+       "Liverpool",
+       "Edinburgh",
+       "Leeds",
+       "Bristol",
+     ],
+     "United States": [
+       "New York",
+       "Los Angeles",
+       "Chicago",
+       "Houston",
+       "Phoenix",
+       "Philadelphia",
+       "San Antonio",
+       "San Diego",
+     ],
+   };
+
 
   const handleColorChange = (e) => {
     setSelectedColor(e.target.value);
@@ -249,6 +488,7 @@ function Heroe() {
                             className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[257px] p-2.5 mr-9 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black "
                             id="grid-last-name"
                             type="text"
+                            style={{ textTransform: "uppercase" }}
                             placeholder="Doe"
                             name="ln"
                             required
@@ -265,62 +505,58 @@ function Heroe() {
                           type="date"
                           name="dof"
                           className=" font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
+                          style={{ textTransform: "uppercase" }} // Ensures input content is uppercase
+                          // placeholder="MM/DD/YY" // Placeholder text in uppercase
                           required
                         />
                       </div>
 
-                      <div>
-                        <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          {t("form4")}
-                        </label>
-                        <select
-                          name="cn"
-                          id="country"
-                          className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                          value={country}
-                          onChange={handleCountryChange}
-                          required
-                        >
-                          <option value="" disabled>
-                            {/* Select a country */}
-                            {t("Sélectionnez un pays")}
-                          </option>
-                          <option value="Italy">Italy</option>
-                          <option value="USA">USA</option>
-                        </select>
-                      </div>
+                      {/* </div> */}
 
                       <div>
-                        <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                          {t("form5")}
-                        </label>
-                        <select
-                          name="ct"
-                          id="city"
-                          className="font-semibold  sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
-                          required
-                        >
-                          <option
-                            // className="placeholder:text-gray-500"
-
-                            value=""
-                            disabled
-                            selected
-                            className="text-gray-500"
+                        <div>
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            {t("form4")}
+                          </label>
+                          <select
+                            name="cn"
+                            id="countryCities"
+                            className="font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
+                            value={selectedCountry}
+                            onChange={handleCountryChange}
+                            required
                           >
-                            {/* Select a city */}
-                            {t("Sélectionnez une ville")}
-                          </option>
-                          {cityOptions.map((city) => (
-                            <option
-                              className="placeholder:text-gray-500"
-                              key={city}
-                              value={city}
-                            >
-                              {city}
+                            <option value="" disabled>
+                              {t("Sélectionnez un pays")}
                             </option>
-                          ))}
-                        </select>
+                            {Object.keys(countryCities).map((country) => (
+                              <option key={country} value={country}>
+                                {t(`countries.${country}`)}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+
+                        <div>
+                          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            {t("form5")}
+                          </label>
+                          <select
+                            name="ct"
+                            id="city"
+                            className="font-semibold sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white dark:border-gray-500 dark:placeholder-gray-400 text-black"
+                            required
+                          >
+                            <option value="" className="text-gray-500">
+                              {t("Sélectionnez une ville")}
+                            </option>
+                            {cityOptions.map((city) => (
+                              <option key={city} value={city}>
+                                {city}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
                       </div>
 
                       <div>
@@ -467,9 +703,19 @@ function Heroe() {
                             </label>
                           </div>
                         </div>
-                       
+                        {/* <a
+                            href="#"
+                            className="text-sm text-blue-700 hover:underline dark:text-blue-500"
+                          >
+                            Lost Password?
+                          </a> */}
                       </div>
-                     
+                      {/* <button
+                          type="submit"
+                          className="w-full  text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                          submit
+                        </button> */}
                       <div className="flex justify-between">
                         <button
                           className="shadow bg-blue-800 hover:bg-indigo-700 text-white font-bold py-2 p-9 px-4 rounded focus:outline-none focus:shadow-outline"
