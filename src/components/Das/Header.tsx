@@ -723,7 +723,7 @@ import "react-datepicker/dist/react-datepicker.css";
                                 />
                               </div>
                               <div className="text-sm ml-3">
-                                <label className="font-medium text-gray-900 dark:text-gray-300">
+                                <label className="font-medium text-white">
                                   {t("form15")}
                                 </label>
                               </div>
@@ -747,7 +747,7 @@ import "react-datepicker/dist/react-datepicker.css";
                                 />
                               </div>
                               <div className="text-sm ml-3">
-                                <label className="font-medium text-gray-900 dark:text-gray-300">
+                                <label className="font-medium text-white">
                                   {t("form16")}
                                 </label>
                               </div>
