@@ -10,21 +10,34 @@ function Grid3debac4() {
   };
    const { t } = useTranslate();
   return (
-    <section className="bg-white md:px-20 px-8">
-      <div className=" flex justify-center items-center md:text-3xl text-1xl text-center font-bold text-white  ">
-        <h1 className="bg-[#77B5FE] p-3 rounded-full w-full">
-          {/* eBacc for your academic success - Your education, our priority. */}
-          {t("prepare for IGCSE4")}
-        </h1>
+    <section
+      className=" md:px-20 px-8 py-20 bg-sky-400"
+      style={{
+        backgroundImage: 'url("/3.png")',
+        backgroundSize: "cover", // Adjust to fit the container
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat", // Prevent repeating if the image is smaller
+        filter: "brightness(100%)",
+      }}
+    >
+      <div className="mb-36 flex items-center justify-center">
+        <div>
+          <h1 className="text-2xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-white  text-white">
+            {/* PrepEngage with our interactive live sessions - Learn together,
+          succeed together. */}
+            {t("prepare for IGCSE4")}
+          </h1>
+        </div>
       </div>
+
       {/* <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:flex-row-reverse py-36 md:-mt-20 -mt-32"></div> */}
-      <div className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2    py-36  md:-mt-20 -mt-32">
+      <div className="overflow-hidden  sm:grid sm:grid-cols-2    py-20 md:-mt-20 -mt-32">
         <img
           alt=""
-          src="/gra.jpg"
-          className="h-56 w-full object-cover sm:h-full "
+          src="/5.png"
+          className="h-56 w-full object-contain sm:h-full "
         />
-        <div className="p-1 md:p-12 lg:px-16 lg:py-24">
+        <div className="p-1 md:p-12 lg:px-16 lg:py-20">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             {/* start */}
             <div className="space-y-4 ">
@@ -88,7 +101,7 @@ function Grid3debac4() {
                     </span>
                   </div>
                   {openIndex === index && (
-                    <div className="mt-4 leading-relaxed text-gray-700 text-left font-medium p-4">
+                    <div className="mt-4 leading-relaxed text-white text-left font-medium p-4">
                       {item.content}
                     </div>
                   )}

@@ -1,10 +1,26 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { T, useTranslate } from "@tolgee/react";
+import { T, useTolgee, useTranslate } from "@tolgee/react";
+
+
 
 function Footerebag() {
+  // const { t } = useTranslate();
   const { t } = useTranslate();
+  const tolgee = useTolgee();
+
+  // Get the current language
+  const currentLanguage = tolgee.getLanguage();
+
+  // Define the image paths for each language
+  const images = {
+    en: "/Logpo-Ebacc.png",
+    fr: "/Logpo-Ebacc.png",
+  };
+  // Get the image path based on the current language
+  const currentImage = images[currentLanguage] || images.en; // Fallback to English image if language not found
+
   return (
     <footer className=" bg-[#061770] py-14">
       <div className="max-w-lg mx-auto">
@@ -12,12 +28,7 @@ function Footerebag() {
           <div className="relative">
             {/* <h1 className="font-bold text-xl pr-5 relative z-50">Skilline</h1> */}
             <div className="p-4">
-              <Image
-                src="/Logpo-Ebacc.png"
-                alt=""
-                width={200}
-                height={200}
-              ></Image>
+              <Image src={currentImage} alt="" width={200} height={200}></Image>
             </div>
           </div>
           <span className="border-l border-gray-500 text-sm pl-5 py-2 font-semibold">
@@ -44,9 +55,7 @@ function Footerebag() {
           </div>
         </div>
         <div className="flex items-center text-gray-400 text-sm justify-center">
-          <p className="pr-3 text-white">
-            Contact
-          </p>
+          <p className="pr-3 text-white">Contact</p>
           {/* <p className="border-l border-white text-white px-3">
             Careers
           </a> */}

@@ -4,14 +4,37 @@
 @tailwind components;
 @tailwind utilities;
 
+/* body{
+  background-color: #090863;
+} */
 
 
-body {
+
+/* body {
   font-family: 'Poppins', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  /* background-color: green; */
-}
+  background-color: blue;
+  background-image: url(/Anglais.png); 
+  /* Correct path to the image */
+  /* background-size: cover; */
+  /* Ensures the image covers the entire background */
+  /* background-repeat: no-repeat; */
+  
+/* } */ */
+
+/* heroo{
+  background-image: url(/Anglais.png);
+  background-size: contain;
+    /* Ensures the image covers the entire background */
+    /* background-repeat: no-repeat;
+} */
+/* bg1 {
+  background-image: url(/3.png);
+  background-size: contain;
+  /* Ensures the image covers the entire background */
+  /* background-repeat: no-repeat;
+}  */
 
 html {
 
@@ -103,6 +126,12 @@ background-image: url(/dotee.png);
   margin: 1rem;
 }
 
+cpr{
+  clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+}
+cpl {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%);
+}
 
 
 #svg-spin {
