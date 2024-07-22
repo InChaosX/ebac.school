@@ -1,12 +1,19 @@
-const withOptimizedImages = require("next-optimized-images");
-
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
-  distDir: process.env.NEXT_BUILD_DIR || ".next", // Custom build directory
-  optimizeImages: false, // Comment out or remove this line
+  // other configurations
+  webpack(config, { dev }) {
+    if (!dev) {
+      // Disable CSS minification in production
+      config.optimization.minimizer = config.optimization.minimizer.filter(
+        (plugin) => !(plugin.constructor.name === "CssMinimizerPlugin")
+      );
+    }
+    return config;
+  },
 };
 
-module.exports = withOptimizedImages(nextConfig);
+module.exports = nextConfig;
+
 // const withOptimizedImages = require("next-optimized-images");
 
 // /** @type {import('next').NextConfig} */
@@ -28,4 +35,3 @@ module.exports = withOptimizedImages(nextConfig);
 // };
 
 // module.exports = withOptimizedImages(nextConfig);
-
